@@ -25,6 +25,12 @@ class MainPageHandler(webapp2.RequestHandler):
         form_template = the_jinja_env.get_template('templates/main.html')
         self.response.write(form_template.render())  # the response 
 
+class GamePage1Handler(webapp2.RequestHandler):
+    def get(self): 
+        print("GET")
+        form_template = the_jinja_env.get_template('templates/game-page1.html')
+        self.response.write(form_template.render())  # the response 
+
 # class RecipePageHandler(webapp2.RequestHandler):
 #     def post(self):
 #         print("POST")
@@ -55,4 +61,5 @@ class MainPageHandler(webapp2.RequestHandler):
 # the app configuration section
 app = webapp2.WSGIApplication([
     ('/', MainPageHandler), #this maps the root url to the Main Page Handler    localhost:8080/form
+    ('/game-page1', GamePage1Handler)
 ], debug=True)

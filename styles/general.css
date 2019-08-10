@@ -17,6 +17,14 @@ body {
 
 }
 
-#homepage h2 {
-    opacity: 0.5; 
+a {
+    opacity: 0.5;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+a:hover {
+    opacity: 1; 
 }
