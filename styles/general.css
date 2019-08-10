@@ -1,0 +1,22 @@
+/* A general stylesheet. We can create others for more specialised pages. */
+
+body {
+
+}
+
+#homepage {
+    
+    color: white;
+    background-color: black;  
+    text-align: center; 
+
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-self: center; /* not working correctly */ 
+
+}
+
+#homepage h2 {
+    opacity: 0.5; 
+}
