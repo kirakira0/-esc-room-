@@ -21,14 +21,24 @@ a {
     opacity: 0.5;
     color: white;
     text-decoration: none;
-
-
 }
 
 a:hover {
     opacity: 1; 
 }
 
-#text-area {
+header {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+}
 
+#sample-image { /* this needs to be centered */ 
+    background: teal;   
+
+    width: 30%;
+    height: 30vw;
+   
+    display:flex;
+    justify-content: center; 
 }
