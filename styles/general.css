@@ -1,16 +1,16 @@
 /* A general stylesheet. We can create others for more specialised pages. */
 
 body {
-
-}
-
-#homepage {
-    
     color: white;
     background-color: black;  
     text-align: center; 
 
-    height: 100%; 
+    font-family: 'Blinker', 'Times New Roman'; 
+}
+
+#homepage {
+    
+    height: 100vh; 
     display: flex; 
     flex-direction: column; 
     align-self: center; /* not working correctly */ 
@@ -27,4 +27,8 @@ a {
 
 a:hover {
     opacity: 1; 
+}
+
+#text-area {
+
 }

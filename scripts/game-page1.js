@@ -1,10 +1,10 @@
 var index = 0;
 
 var dialogue1 = [
-    "hello", 
-    "here's some dialogue", 
-    "wow!",
-    "what great dialogue"
+    "Hello and welcome to the escape room!", 
+    "Here's some sample dialogue.", 
+    "And another line ...",
+    "Wow, what great dialogue!"
 ]
 
 document.getElementById("dialogue-text").textContent = dialogue1[0];
