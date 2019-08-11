@@ -42,3 +42,8 @@ header {
     display:flex;
     justify-content: center; 
 }
+
+#name-text {
+    text-transform: uppercase;
+    opacity: 0.55; 
+}

@@ -1,28 +1,57 @@
+//the dialogue 
+
 var index = 0;
 
 var dialogue1 = [
-    "Hello and welcome to the escape room!", 
-    "Here's some sample dialogue.", 
-    "And another line ...",
-    "Wow, what great dialogue!"
+    "  ::The room you awaken in is cold and silent save for the soft hum of electrical generators.", 
+    "  ::The only other sign of life in the room is a broken-looking android in the far corner.",
+    "  ::Upon noticing you, it calls out in a small, robotic voice.",  
+    "?::Oh ... You're not supposed to be here.", 
+    "?::Hello, human. I am Andriod CC193.",
+    "Andriod CC193::It seems that you have awoken in the middle of your upload.",
+    "Andriod CC193::This is an unfortunate development.",
+    "Andriod CC193::You must join the rest of mankind in the virtual world as quickly as possible.",
+    "Andriod CC193::Although your auto upload malfunctioned, there are enough resources in this laboratory for you to perform a manual transfer.",
+    "Andriod CC193::Do you understand what you must do?",  
+
 ]
 
-document.getElementById("dialogue-text").textContent = dialogue1[0];
+var dialogue2 = [
+    "Android CC193:: dialogue 2", 
+]
+
+conversation = dialogue1; 
+
+/*
+lines of conversation within the conversation list are separated into a name and a line of dialogue by two colons (::)
+the name of the person (or robot :D) speaking comes before the separator and their line comes after the two colons
+*/ 
+colonPos = conversation[index].indexOf("::"); 
+document.getElementById("dialogue-text").textContent = conversation[index].substring(colonPos + 2);
+document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos); 
 
 const submitButton = document.querySelector("#submit-button");
 
 submitButton.addEventListener('click', e=> {
-    if (index < dialogue1.length - 1) {
-        console.log("index = " + index + " & list length = " + (dialogue1.length - 1))
+    if (index < conversation.length) {
+        //console.log(dialogue1.indexOf("::"))
+        colonPos = conversation[index].indexOf("::"); 
+        document.getElementById("dialogue-text").textContent = conversation[index].substring(colonPos + 2);
+        document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos); 
         index += 1; 
-        document.getElementById("dialogue-text").textContent = dialogue1[index];
+    }
+    else {
+        if (conversation = dialogue1) {
+            //create two buttons -> one for yes i understand, one for no i need more explaination
+        }
+
     }
 })
 
 
 
 
-// 10 minutes from now
+// the timer
 var time_in_minutes = 10;
 var current_time = Date.parse(new Date());
 var deadline = new Date(current_time + time_in_minutes*60*1000);
