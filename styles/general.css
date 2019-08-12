@@ -17,6 +17,13 @@ body {
 
 }
 
+#game-page {
+    display: grid; 
+    height: 100vh;
+    grid-template-rows: 1fr 5fr 2fr 2fr; 
+    grid-template-columns: 1fr 2fr 1fr;  
+}
+
 a {
     opacity: 0.5;
     color: white;
@@ -27,29 +34,94 @@ a:hover {
     opacity: 1;
 }
 
-header {
+/* header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+} */
+
+#return-home {
+    grid-row: 1; 
+    grid-column: 1; 
+}
+#timer {
+    grid-row: 1; 
+    grid-column: 2; 
+}
+#user-name {
+    grid-row: 1; 
+    grid-column: 3; 
 }
 
 
-#name-text {
-    text-transform: uppercase;
-    opacity: 0.55;
+#option-button2 {
+    margin-top: 10px;
 }
 
 #image-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-row: 2; 
+    grid-column: 1 / span 3;
+            
+    /* display: flex; 
+    align-items: center; 
+    justify-content: center;  */
+  }
+
+#view1 {
+    display: inline-block; 
+}
+#view2 {
+    background: lightblue;
+
+    /* width: 50%;
+    height: 30vw; */
+/* 
+    display:flex;
+    justify-content: center; */
 }
 
+#view3 {
+    background: slategray;
+/* 
+    width: 50%;
+    height: 30vw; */
+
+    /* display:flex;
+    justify-content: center; */
+}
+
+#view4 {
+    background: turquoise;
+
+    /* width: 50%;
+    height: 30vw;
+
+    display:flex;
+    justify-content: center; */
+}
+
+#image1 {
+    width: 50%;
+    height: 30vw;
+
+
+}
+/* 
+#name-text {
+    text-transform: uppercase;
+    opacity: 0.55;
+    grid-row: 3; 
+    grid-column: 1 / span 3; 
+}
+#dialogue-text {
+    grid-row: 3; 
+    grid-column: 1 / span 3; 
+} */
+
+
 #text-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-row: 3; 
+    grid-column: 1 / span 3; 
 }
 #name-text {
     margin-bottom: 0px;
@@ -57,58 +129,5 @@ header {
 #dialogue-text {
     margin-top: 10px;
 }
-#option-button2 {
-    margin-top: 10px;
-}
 
-#image-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-  }
-
-#view1 {
-    background: teal;
-
-    width: 50%;
-    height: 30vw;
-
-    display:flex;
-    justify-content: center;
-}
-
-#name-text {
-    text-transform: uppercase;
-    opacity: 0.55;
-}
-
-#view2 {
-    background: lightblue;
-
-    width: 50%;
-    height: 30vw;
-
-    display:flex;
-    justify-content: center;
-}
-
-#view3 {
-    background: slategray;
-
-    width: 50%;
-    height: 30vw;
-
-    display:flex;
-    justify-content: center;
-}
-
-#view4 {
-    background: turquoise;
-
-    width: 50%;
-    height: 30vw;
-
-    display:flex;
-    justify-content: center;
-}

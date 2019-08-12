@@ -1,9 +1,10 @@
-document.getElementById("view1").style.display = "block"; 
+document.getElementById("view1").style.display = "inline-block"; 
 document.getElementById("view2").style.display = "none";
 document.getElementById("view3").style.display = "none";
 document.getElementById("view4").style.display = "none";
 
 
+let currentView = 1; 
 
 document.onkeydown = checkKey;
 
@@ -19,44 +20,40 @@ function checkKey(e) {
 
     }
     else if (e.keyCode == '37' || e.keyCode == '65') { //LEFT ARROW KEY OR 'A'
-        console.log("left arrow pressed"); 
-        if (document.getElementById("view1").style.display == "block") { //if currently in room 1
-            document.getElementById("view1").style.display = "none"; 
-            document.getElementById("view4").style.display = "block";
+        console.log(currentView); 
+            
+        currentView--;
+        if (currentView == 0) {
+            currentView = 4; 
         }
-        else if (document.getElementById("view2").style.display == "block") { //if currently in room 2
-            document.getElementById("view2").style.display = "none"; 
-            document.getElementById("view1").style.display = "block";
-        }
-        else if (document.getElementById("view3").style.display == "block") { //if currently in room 3
-            document.getElementById("view3").style.display = "none"; 
-            document.getElementById("view2").style.display = "block";
-        }
-        else if (document.getElementById("view4").style.display == "block") { //if currently in room 4
-            document.getElementById("view4").style.display = "none"; 
-            document.getElementById("view3").style.display = "block";
-        }
+
+        showView(); 
 
     }
     else if (e.keyCode == '39' || e.keyCode == '68') { //RIGHT ARROW KEY OR 'D' 
-        console.log("right arrow pressed"); 
-        if (document.getElementById("view1").style.display == "block") { //if currently in room 1
-            document.getElementById("view1").style.display = "none"; 
-            document.getElementById("view2").style.display = "block";
+        console.log(currentView); 
+        
+        currentView++;
+        if (currentView == 5) {
+            currentView = 1; 
         }
-        else if (document.getElementById("view2").style.display == "block") { //if currently in room 2
-            document.getElementById("view2").style.display = "none"; 
-            document.getElementById("view3").style.display = "block";
-        }
-        else if (document.getElementById("view3").style.display == "block") { //if currently in room 3
-            document.getElementById("view3").style.display = "none"; 
-            document.getElementById("view4").style.display = "block";
-        }
-        else if (document.getElementById("view4").style.display == "block") { //if currently in room 4
-            document.getElementById("view4").style.display = "none"; 
-            document.getElementById("view1").style.display = "block";
-        }
+
+        showView(); 
 
     }
 
+}
+
+function showView() {
+    for (let i = 1; i <= 4; i++) {
+
+        const element = document.querySelector(`#view${i}`); 
+        if (i === currentView) {
+            element.style.display = "inline-block"; 
+        }
+        else {
+            console.log(`#view${i}`); 
+            element.style.display = "none"; 
+        }
+    }
 }

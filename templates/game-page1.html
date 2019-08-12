@@ -8,31 +8,34 @@
     <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body id="game-page1">
-    <header>
-        <p id="return-home">Return Home</p>
-        <p id="timer">10:00</p>
-        <p id="user-name">Kira</p>
-    </header>
+<body>
+    <div id="game-page">
+        <!-- <div id="header"> -->
+        <!-- <header> -->
+            <p id="return-home">Return Home</p>
+            <p id="timer">10:00</p>
+            <p id="user-name">Kira</p>
+        <!-- </header> -->
+        <!-- </div> -->
 
-    <div id="image-area"> <!--this is where we can put images (i.e. the escape room background-->
-        <div id="view1"><img src="/images/sample-wall.png" alt="view 1"></div>
-        <div id="view2">view2: one wall in the first puzzle room</div>
-        <div id="view3">view3: the computer</div>
-        <div id="view4">view4: the hallway</div>
+        <div id="image-area"> <!--this is where we can put images (i.e. the escape room background-->
+            <div id="view1"><img id ="image1" src="/images/sample-wall.png" alt="view 1"></div>
+            <div id="view2">view2: one wall in the first puzzle room</div>
+            <div id="view3">view3: the computer</div>
+            <div id="view4">view4: the hallway</div>
+        </div>
+
+        <div id="text-area">
+            <h3 id="name-text">name</h3>
+            <h3 id="dialogue-text">game opening</h3>
+            <input id="submit-button" type="submit" value="Continue">
+            <input id="option-button1" type="submit" value="option 1">
+            <input id="option-button2" type="submit" value="option 2">
+
+        </div>
+        <script src="/scripts/timer.js"></script>
+        <script src="/scripts/dialogue.js"></script>
+        <script src="/scripts/change-view.js"></script>
     </div>
-
-    <div id="text-area">
-        <h3 id="name-text">name</h3>
-        <h3 id="dialogue-text">game opening</h3>
-        <input id="submit-button" type="submit" value="Continue">
-        <input id="option-button1" type="submit" value="option 1">
-        <input id="option-button2" type="submit" value="option 2">
-
-    </div>
-    <script src="/scripts/timer.js"></script>
-    <script src="/scripts/dialogue.js"></script>
-    <script src="/scripts/change-view.js"></script>
-
 </body>
 </html>
