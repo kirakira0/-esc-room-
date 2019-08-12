@@ -17,12 +17,9 @@ body {
     font-style: bold;
     display:flex;
     flex-direction: column;
-    
 }
-/* #homepage {
 
-    display: flex;
-    flex-direction: column;
-    align-self: center; /* not working correctly */
-
-} */
+h2 {
+    font-size: 35px;
+    font-style: none;
+}
