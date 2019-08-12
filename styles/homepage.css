@@ -12,10 +12,17 @@ body {
 
 }
 
-#homepage {
+#escape_title {
+    font-size: 50px;
+    font-style: bold;
+    display:flex;
+    flex-direction: column;
+    
+}
+/* #homepage {
 
     display: flex;
     flex-direction: column;
     align-self: center; /* not working correctly */
 
-}
+} */
