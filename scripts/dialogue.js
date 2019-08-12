@@ -45,6 +45,11 @@ var winVer1 = [
     "::you win"
 ]
 
+var android1 = [
+    "Android CC193::Sorry human; I wish there was more that I could do for you.",
+    "Android CC193::Have you spoken to the computer yet? It may be able to help you more than I."
+]
+
 console.log(window.location.href); 
 
 conversation = dialogue1; 
@@ -145,6 +150,15 @@ function hideText() {
     document.getElementById("dialogue-text").style.display = "none";
     document.getElementById("name-text").style.display = "none";
     document.getElementById("submit-button").style.display = "none";
+    document.getElementById("option-button1").style.display = "none";
+    document.getElementById("option-button2").style.display = "none";
+    index = 0; 
+}
+
+function showText() {
+    document.getElementById("dialogue-text").style.display = "block";
+    document.getElementById("name-text").style.display = "block";
+    document.getElementById("submit-button").style.display = "block";
     document.getElementById("option-button1").style.display = "none";
     document.getElementById("option-button2").style.display = "none";
     index = 0; 
