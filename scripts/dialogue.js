@@ -1,5 +1,10 @@
 //the dialogue 
 var index = 0;
+run_clock('clockdiv',deadline);
+
+
+//document.getElementById("timer").style.display = "none";
+
 
 var dialogue1 = [
     "  ::The room you awaken in is cold and silent save for the soft hum of electrical generators.", 
@@ -57,6 +62,7 @@ submitButton.addEventListener('click', e=> {
     colonPos = conversation[index].indexOf("::");       
     //console.log(conversation[index + 2].substring(0, conversation[index + 2].indexOf("::"))); 
     if (index >= conversation.length) { //the conversation is finished
+        run_clock('clockdiv',deadline);
         hideText(); 
     }
     else {
@@ -98,6 +104,7 @@ option1Button.addEventListener('click', e=> {
     //conversation = conversation[index + 2].substring(conversation[index + 2].indexOf("::") + 2); 
     if (conversation == dialogue1) {
         conversation = understand; 
+
     }
     else if (conversation == explainMore) {
         conversation = understand; 
@@ -118,6 +125,7 @@ option2Button.addEventListener('click', e=> {
     document.getElementById("option-button2").style.display = "none";
     if (conversation == dialogue1) {
         conversation = explainMore; 
+
     }
     index = 0; 
     document.getElementById("dialogue-text").textContent = conversation[index].substring(colonPos + 2); //define the dialogue
@@ -134,7 +142,3 @@ function hideText() {
     document.getElementById("option-button2").style.display = "none";
     index = 0; 
 }
-
-
-
-

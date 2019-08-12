@@ -33,17 +33,80 @@ header {
     grid-template-rows: 1fr;
 }
 
-#sample-image { /* this needs to be centered */
+
+#name-text {
+    text-transform: uppercase;
+    opacity: 0.55;
+}
+
+#image-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#name-text {
+    margin-bottom: 0px;
+}
+#dialogue-text {
+    margin-top: 10px;
+}
+#option-button2 {
+    margin-top: 10px;
+}
+
+#view1 {
     background: teal;
 
-    width: 30%;
+    width: 50%;
     height: 30vw;
-
     display:flex;
+    justify-content: center;
+}
 
+#image-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #name-text {
     text-transform: uppercase;
     opacity: 0.55;
+}
+
+#view2 {
+    background: lightblue;
+
+    width: 50%;
+    height: 30vw;
+
+    display:flex;
+    justify-content: center;
+}
+
+#view3 {
+    background: slategray;
+
+    width: 50%;
+    height: 30vw;
+
+    display:flex;
+    justify-content: center;
+}
+
+#view4 {
+    background: turquoise;
+
+    width: 50%;
+    height: 30vw;
+
+    display:flex;
+    justify-content: center;
 }
