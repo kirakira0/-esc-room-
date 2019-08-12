@@ -11,14 +11,14 @@ function checkKey(e) {
 
     e = e || window.event;
 
-    if (e.keyCode == '38') {
+    if (e.keyCode == '38' || e.keyCode == '87') { //UP ARROW KEY OR 'W'
         console.log("up arrow pressed"); 
     }
-    else if (e.keyCode == '40') {
+    else if (e.keyCode == '40' || e.keyCode == "83") { //DOWN ARROW KEY OR 'S'
         console.log("down arrow pressed"); 
 
     }
-    else if (e.keyCode == '37') {
+    else if (e.keyCode == '37' || e.keyCode == '65') { //LEFT ARROW KEY OR 'A'
         console.log("left arrow pressed"); 
         if (document.getElementById("view1").style.display == "block") { //if currently in room 1
             document.getElementById("view1").style.display = "none"; 
@@ -38,7 +38,7 @@ function checkKey(e) {
         }
 
     }
-    else if (e.keyCode == '39') {
+    else if (e.keyCode == '39' || e.keyCode == '68') { //RIGHT ARROW KEY OR 'D' 
         console.log("right arrow pressed"); 
         if (document.getElementById("view1").style.display == "block") { //if currently in room 1
             document.getElementById("view1").style.display = "none"; 
