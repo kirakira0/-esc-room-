@@ -2,18 +2,18 @@
 
 body {
     color: white;
-    background-color: black;  
-    text-align: center; 
+    background-color: black;
+    text-align: center;
 
-    font-family: 'Blinker', 'Times New Roman'; 
+    font-family: 'Blinker', 'Times New Roman';
 }
 
 #homepage {
-    
-    height: 100vh; 
-    display: flex; 
-    flex-direction: column; 
-    align-self: center; /* not working correctly */ 
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center; /* not working correctly */
 
 }
 
@@ -24,26 +24,26 @@ a {
 }
 
 a:hover {
-    opacity: 1; 
+    opacity: 1;
 }
 
 header {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
-#sample-image { /* this needs to be centered */ 
-    background: teal;   
+#sample-image { /* this needs to be centered */
+    background: teal;
 
     width: 30%;
     height: 30vw;
-   
+
     display:flex;
-    justify-content: center; 
+
 }
 
 #name-text {
     text-transform: uppercase;
-    opacity: 0.55; 
+    opacity: 0.55;
 }
