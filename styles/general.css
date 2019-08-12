@@ -61,19 +61,21 @@ header {
     margin-top: 10px;
 }
 
+#image-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
 #view1 {
     background: teal;
 
     width: 50%;
     height: 30vw;
+
     display:flex;
     justify-content: center;
-}
-
-#image-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #name-text {
