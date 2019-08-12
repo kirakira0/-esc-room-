@@ -4,6 +4,7 @@ body {
   text-align: center;
 
   font-family: 'Blinker', 'Times New Roman';
+  text-transform: lowercase;
 }
 
 h1 {

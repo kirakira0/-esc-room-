@@ -11,6 +11,7 @@ body {
 
     margin: 0;
     padding: 0;
+    text-transform: lowercase;
 
 }
 
@@ -105,7 +106,7 @@ a:hover {
 }
 #name-text {
     margin-bottom: 0px;
-    opacity: 0.60; 
+    opacity: 0.60;
 }
 #dialogue-text {
     margin-top: 10px;
@@ -119,13 +120,15 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #option-button2 {
     margin-top: 10px;
 
 }
+<<<<<<< HEAD
+=======
 
 #android {
     background-color: blue; 
@@ -133,3 +136,4 @@ a:hover {
     height: 50px; 
 }
 
+>>>>>>> ed0bd67b3fe468c2a017d053db62781f9252a850
