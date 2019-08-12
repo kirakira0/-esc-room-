@@ -45,6 +45,22 @@ header {
     align-items: center; 
 }
 
+#text-area {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+#name-text {
+    margin-bottom: 0px; 
+}
+#dialogue-text {
+    margin-top: 10px; 
+}
+#option-button2 {
+    margin-top: 10px; 
+}
+
 #view1 { 
     background: teal;   
 
