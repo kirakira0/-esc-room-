@@ -20,8 +20,10 @@ body {
 #game-page {
     display: grid; 
     height: 100vh;
-    grid-template-rows: 1fr 5fr 2fr 2fr; 
+    grid-template-rows: 60px auto 90px 90px; 
     grid-template-columns: 1fr 2fr 1fr;  
+    margin: 0; 
+    padding: 0; 
 }
 
 a {
@@ -33,12 +35,6 @@ a {
 a:hover {
     opacity: 1;
 }
-
-/* header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-} */
 
 #return-home {
     grid-row: 1; 
@@ -63,20 +59,17 @@ a:hover {
     grid-column: 1 / span 3;
     /* display: flex; 
     align-items: center; 
-    justify-content: center;  */
-  }
+    justify-content: center;  */ 
+
+}
 
 #view1 {
-    display: inline-block; 
+    display: inline-block;
+
 }
 #view2 {
     background: lightblue;
 
-    /* width: 50%;
-    height: 30vw; */
-/* 
-    display:flex;
-    justify-content: center; */
 }
 
 #view3 {
@@ -99,11 +92,9 @@ a:hover {
     justify-content: center; */
 }
 
-#image1 {
-
-}
-#image4 {
-
+img {
+    height: 450px; 
+    width: 750px; 
 }
 /* 
 #name-text {
