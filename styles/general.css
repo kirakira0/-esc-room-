@@ -55,17 +55,9 @@ a:hover {
 }
 
 
-#option-button2 {
-    margin-top: 10px;
-}
-
 #image-area {
     grid-row: 2; 
     grid-column: 1 / span 3;
-    /* display: flex; 
-    align-items: center; 
-    justify-content: center;  */ 
-
 }
 
 #view1 {
@@ -79,39 +71,16 @@ a:hover {
 
 #view3 {
     background: slategray;
-/* 
-    width: 50%;
-    height: 30vw; */
-
-    /* display:flex;
-    justify-content: center; */
 }
 
 #view4 {
     display: inline-block; 
-
-    /* width: 50%;
-    height: 30vw;
-
-    display:flex;
-    justify-content: center; */
 }
 
 img {
     height: 450px; 
     width: 750px; 
 }
-/* 
-#name-text {
-    text-transform: uppercase;
-    opacity: 0.55;
-    grid-row: 3; 
-    grid-column: 1 / span 3; 
-}
-#dialogue-text {
-    grid-row: 3; 
-    grid-column: 1 / span 3; 
-} */
 
 
 #text-area {
@@ -125,4 +94,17 @@ img {
     margin-top: 10px;
 }
 
+#button-area {
+    margin-top: 10px;
+    grid-row: 4; 
+    grid-column: 2;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
 
+#option-button2 {
+    margin-top: 10px;
+
+}
