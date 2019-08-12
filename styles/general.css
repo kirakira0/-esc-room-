@@ -9,8 +9,8 @@ body {
 
     height: 100vh;
 
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -23,12 +23,12 @@ body {
 }
 
 #game-page {
-    display: grid; 
-    grid-template-rows: 60px auto 90px 90px; 
-    grid-template-columns: 1fr 2fr 1fr;  
-    margin: 0; 
-    padding: 0; 
-    height: 100%; 
+    display: grid;
+    grid-template-rows: 60px auto 90px 90px;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 a {
@@ -42,21 +42,21 @@ a:hover {
 }
 
 #return-home {
-    grid-row: 1; 
-    grid-column: 1; 
+    grid-row: 1;
+    grid-column: 1;
 }
 #timer {
-    grid-row: 1; 
-    grid-column: 2; 
+    grid-row: 1;
+    grid-column: 2;
 }
 #user-name {
-    grid-row: 1; 
-    grid-column: 3; 
+    grid-row: 1;
+    grid-column: 3;
 }
 
 
 #image-area {
-    grid-row: 2; 
+    grid-row: 2;
     grid-column: 1 / span 3;
 }
 
@@ -72,18 +72,18 @@ a:hover {
 }
 
 #view4 {
-    display: inline-block; 
+    display: inline-block;
 }
 
 img {
-    height: 450px; 
-    width: 750px; 
+    height: 450px;
+    width: 750px;
 }
 
 
 #text-area {
-    grid-row: 3; 
-    grid-column: 1 / span 3; 
+    grid-row: 3;
+    grid-column: 1 / span 3;
 }
 #name-text {
     margin-bottom: 0px;
@@ -95,12 +95,13 @@ img {
 
 #button-area {
     margin-top: 10px;
-    grid-row: 4; 
+    grid-row: 4;
     grid-column: 2;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    
 }
 
 #option-button2 {

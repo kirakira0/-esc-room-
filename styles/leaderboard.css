@@ -1,0 +1,17 @@
+body {
+  color: white;
+  background-color: black;
+  text-align: center;
+
+  font-family: 'Blinker', 'Times New Roman';
+}
+
+h1 {
+  font-size: 50px;
+  text-style: bold;
+}
+
+#Leader_box {
+  display: inline-block;
+  background-color: teal;
+}
