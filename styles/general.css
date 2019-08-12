@@ -62,15 +62,13 @@ a:hover {
 
 #view1 {
     display: inline-block;
-
 }
 #view2 {
-    background: lightblue;
-
+    display: inline-block;
 }
 
 #view3 {
-    background: slategray;
+    display: inline-block;
 }
 
 #view4 {
@@ -89,6 +87,7 @@ img {
 }
 #name-text {
     margin-bottom: 0px;
+    opacity: 0.60; 
 }
 #dialogue-text {
     margin-top: 10px;
@@ -109,3 +108,4 @@ img {
     margin-top: 10px;
 
 }
+
