@@ -40,6 +40,13 @@ var explainMore = [
     "Sure ...::understand"
 ]
 
+var winVer1 = [
+    "::congrats", 
+    "::you win"
+]
+
+console.log(window.location.href); 
+
 conversation = dialogue1; 
 
 document.getElementById("option-button1").style.display = "none";
