@@ -33,15 +33,6 @@ header {
     grid-template-rows: 1fr; 
 }
 
-#sample-image { /* this needs to be centered */ 
-    background: teal;   
-
-    width: 30%;
-    height: 30vw;
-   
-    display:flex;
-    justify-content: center; 
-}
 
 #name-text {
     text-transform: uppercase;
@@ -52,4 +43,44 @@ header {
     display: flex; 
     justify-content: center; 
     align-items: center; 
+}
+
+#view1 { 
+    background: teal;   
+
+    width: 50%;
+    height: 30vw;
+   
+    display:flex;
+    justify-content: center; 
+}
+
+#view2 { 
+    background: lightblue;   
+
+    width: 50%;
+    height: 30vw;
+   
+    display:flex;
+    justify-content: center; 
+}
+
+#view3 { 
+    background: slategray;   
+
+    width: 50%;
+    height: 30vw;
+   
+    display:flex;
+    justify-content: center; 
+}
+
+#view4 { 
+    background: turquoise;   
+
+    width: 50%;
+    height: 30vw;
+   
+    display:flex;
+    justify-content: center; 
 }
