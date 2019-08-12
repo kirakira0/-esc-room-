@@ -7,6 +7,7 @@ from google.appengine.api import urlfetch
 # for debug and logging
 import pprint
 import logging
+from google.appengine.api import users
 
 
 # This initializes the jinja2 Environment.
@@ -21,9 +22,19 @@ class MainPageHandler(webapp2.RequestHandler):
     def get(self):
         print("GET")
         logging.debug("some helpful debug info")
-
         form_template = the_jinja_env.get_template('templates/main.html')
-        self.response.write(form_template.render())  # the response
+        # self.response.write(form_template.render())  # the response
+
+        google_user = users.get_current_user()
+        if google_user:
+            self.response.write(form_template.render({
+                'url':users.create_logout_url('/'),
+                "username": google_user.nickname()
+            }));
+        else:
+            self.response.write(form_template.render({
+                'url':users.create_login_url('/')
+            }));
 
 class GamePage1Handler(webapp2.RequestHandler):
     def get(self):
