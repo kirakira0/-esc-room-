@@ -3,3 +3,13 @@ body {
   font-family: 'Blinker', 'Times New Roman';
   color: white;
 }
+
+h1 {
+  font-size: 50px;
+  font-style: bold;
+}
+
+p {
+  font-size: 30px;
+  font-style: bold;
+}
