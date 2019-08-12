@@ -6,11 +6,16 @@ body {
     text-align: center;
 
     font-family: 'Blinker', 'Times New Roman';
+
+    height: 100vh;
+
+    margin: 0; 
+    padding: 0; 
+
 }
 
 #homepage {
 
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-self: center; /* not working correctly */
@@ -19,11 +24,11 @@ body {
 
 #game-page {
     display: grid; 
-    height: 100vh;
     grid-template-rows: 60px auto 90px 90px; 
     grid-template-columns: 1fr 2fr 1fr;  
     margin: 0; 
     padding: 0; 
+    height: 100%; 
 }
 
 a {
