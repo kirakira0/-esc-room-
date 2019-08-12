@@ -2,14 +2,30 @@ body {
   background-color: black;
   font-family: 'Blinker', 'Times New Roman';
   color: white;
+  text-align: center;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
+  font-style: bold;
+
+}
+#Our_creators {
+  font-size: 30px;
   font-style: bold;
 }
 
-p {
+#About_us {
+  font-size: 20px;
+}
+
+#Our_supporters
+{
   font-size: 30px;
   font-style: bold;
+}
+
+#About_supporters
+{
+  font-size: 20px;
 }
