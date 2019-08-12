@@ -29,11 +29,14 @@ class MainPageHandler(webapp2.RequestHandler):
         if google_user:
             self.response.write(form_template.render({
                 'url':users.create_logout_url('/'),
-                "username": google_user.nickname()
+                "username": google_user.nickname(),
+                "loginMess": "log out"
             }));
         else:
             self.response.write(form_template.render({
-                'url':users.create_login_url('/')
+                'url':users.create_login_url('/'),
+                "loginMess": "log in"
+
             }));
 
 class GamePage1Handler(webapp2.RequestHandler):
