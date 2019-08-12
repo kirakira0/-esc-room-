@@ -43,7 +43,9 @@ class GamePage1Handler(webapp2.RequestHandler):
     def get(self):
         print("GET")
         form_template = the_jinja_env.get_template('templates/game-page1.html')
-        self.response.write(form_template.render())  # the response
+        self.response.write(form_template.render({
+            "username": users.get_current_user().nickname()
+        }))  # the response
 
 class WinVer1Handler(webapp2.RequestHandler):
     def get(self):
