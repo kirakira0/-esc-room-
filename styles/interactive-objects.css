@@ -78,3 +78,9 @@
     width: 100px;
     margin-right: 0px;
 }
+
+#panel {
+    background: dimgray; 
+    height: 200px;
+    width: 100px;
+}
