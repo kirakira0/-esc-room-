@@ -1,0 +1,59 @@
+.cls-1 {
+    fill: #FAF8FF;
+    stroke:none;
+    stroke-width: 2px;
+    font-size: 80px;
+    font-family: 'Blinker', 'Times New Roman';
+    stroke-dasharray: 1360;
+  animation-iteration-count: 1;
+  animation: csvg 3s cubic-bezier(0, 0.23, 1, .1);
+  }
+
+  @keyframes csvg {
+      0% {
+          stroke: #fff;
+          stroke-width: 2px;
+          opacity: 0;
+          fill: none;
+          stroke-dasharray: 0;
+      }
+      30% {
+          stroke: #fff;
+          stroke-width: 2px;
+          opacity: 10;
+          fill: none;
+          /* stroke-dasharray: 1360; */
+      }
+      80% {
+          stroke: #fff;
+          stroke-width: 2px;
+          fill: rgba(255, 255, 255, 0);
+      }
+      100% {
+          opacity: 10;
+          fill: #FFE7FF;
+          stroke-dasharray: 1360;
+          outline: none;
+          stroke: none;
+      }
+  }
+
+
+
+.wrapper {
+    /* width: 50%; */
+    /* display: flex; 
+    align-content: center;
+    justify-content: center; 
+    margin-left: 20px;  */
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-image: url("title.svg") */
+}
+
+#computer-text:hover {
+    opacity: 0.6; 
+
+}
