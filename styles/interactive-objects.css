@@ -48,35 +48,61 @@
     flex-direction: row;
 }
 #door-left {
-
-
-    background: gray;
+    background: #8EA6CB;
     height: 200px;
     width: 100px;
-    margin-left: 0px;
+    display: inline-block;
+      z-index: 0;
+
 }
 #door-right {
-
-
-    background: darkgray;
+    background: #8EA6CB;
     height: 200px;
     width: 100px;
-    margin-right: 0px;
+    display: inline-block;
+    z-index: 0;
+}
+
+.doors {
+  top:100px;
+  position:relative;
+}
+
+#right-knob{
+  background: lightgray;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  margin-right: 15px;
+}
+
+#left-knob{
+  background: lightgray;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  margin-left: 15px;
 }
 
 #panel {
-    background: dimgray; 
+    background: dimgray;
     height: 400px;
     width: 600px;
-    position: relative; 
+    position: relative;
 }
 
 #panel:hover {
-    background: slategray; 
+    background: slategray;
 }
 
 #panel-text {
-    padding: 150px; 
+    padding: 150px;
 }
 
 /* .screw {
@@ -88,7 +114,7 @@
     height: 50px;
     border-radius: 50%;
 
-} */ 
+} */
 
 #screw1 {
     background: lightgray;
@@ -96,12 +122,12 @@
     height: 40px;
     border-radius: 50%;
 
-    position: absolute; 
-    left: 10px; 
-    top: 10px; 
+    position: absolute;
+    left: 10px;
+    top: 10px;
 
     z-index: 5;
-    /* margin-top: -65px; 
+    /* margin-top: -65px;
     margin-left: 15px;  */
 }
 
@@ -110,13 +136,13 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    
+
     position: absolute;
-    left: 10px; 
-    bottom: 10px;  
+    left: 10px;
+    bottom: 10px;
 
     z-index: 5;
-    /* margin-top: -40px; 
+    /* margin-top: -40px;
     margin-left: 545px;  */
 }
 
@@ -126,13 +152,13 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    
-    position: absolute; 
-    right: 10px; 
-    top: 10px; 
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
 
     z-index: 5;
-    /* margin-top: -375px; 
+    /* margin-top: -375px;
     margin-left: 15px;  */
 }
 
@@ -141,20 +167,40 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    
-    position: absolute; 
-    right: 10px; 
-    bottom: 10px; 
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 
     z-index: 5;
-    /* margin-top: -375px; 
+    /* margin-top: -375px;
     margin-left: 15px;  */
 }
 
 
 #secret-message {
-    margin-top: -10px; 
+    margin-top: -10px;
     /* margin-right: 0px;  */
-    position: absolute; 
-    z-index: -1; 
+    position: absolute;
+    z-index: -1;
+}
+
+/* .trapezoid {
+  border-bottom: 250px solid #555;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  height: 150px;
+  width: 500px;
+  margin-top: 200px;
+} */
+
+.trapezoid {
+  border-bottom: 150px solid #555;
+  border-left: 248px solid transparent;
+  border-right: 248.5px solid transparent;
+  height: 150px;
+  width: 700px;
+  /* margin-top: 300px; */
+  top: 72px;
+  position: relative;
 }
