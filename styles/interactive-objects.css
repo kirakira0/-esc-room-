@@ -48,20 +48,46 @@
     flex-direction: row;
 }
 #door-left {
-
-
-    background: gray;
+    background: #8EA6CB;
     height: 200px;
     width: 100px;
-    margin-left: 0px;
+    display: inline-block;
+      z-index: 0;
+
 }
 #door-right {
-
-
-    background: darkgray;
+    background: #8EA6CB;
     height: 200px;
     width: 100px;
-    margin-right: 0px;
+    display: inline-block;
+    z-index: 0;
+}
+
+.doors {
+  top:100px;
+  position:relative;
+}
+
+#right-knob{
+  background: lightgray;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  margin-right: 15px;
+}
+
+#left-knob{
+  background: lightgray;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  margin-left: 15px;
 }
 
 #panel {
@@ -78,6 +104,17 @@
 #panel-text {
     padding: 150px;
 }
+
+/* .screw {
+    display: flex;
+    justify-content: space-between;
+
+    background: lightgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+} */
 
 #screw1 {
     background: lightgray;
@@ -146,6 +183,16 @@
     /* margin-right: 0px;  */
     position: absolute;
     z-index: -1;
+}
+
+.trapezoid {
+  border-bottom: 150px solid #555;
+  border-left: 248px solid transparent;
+  border-right: 248.5px solid transparent;
+  height: 150px;
+  width: 700px;
+  top: 72px;
+  position: relative;
 }
 
 #bookshelf {
