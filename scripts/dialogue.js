@@ -57,7 +57,7 @@ var android2 = [
     "Android CC193::The AI hosted on that machine is quite facetious, though.",
     "Android CC193::It very well may have required password authentication out of spite.",
     "2options::",
-    "What do I do now?.::android3",
+    "What do I do now?::android3",
     "[leave conversation]::end"
 ]
 
@@ -147,6 +147,9 @@ option1Button.addEventListener('click', e=> {
     else if (conversation == explainMore) {
         conversation = understand; 
     }
+    else if (conversation == android2) {
+        conversation = android3; 
+    }
     
     index = 0; 
     colonPos = conversation[index].indexOf("::"); //define the separator 
@@ -163,7 +166,9 @@ option2Button.addEventListener('click', e=> {
     document.getElementById("option-button2").style.display = "none";
     if (conversation == dialogue1) {
         conversation = explainMore; 
-
+    }
+    else if (conversation == android2) {
+        conversation = end; 
     }
     index = 0; 
     document.getElementById("dialogue-text").textContent = conversation[index].substring(colonPos + 2); //define the dialogue

@@ -22,7 +22,7 @@ computerElement.addEventListener('click', e=> {
     if (computer.numConvos === 0) {
         computer.numConvos++; 
         //showText( computer1 );
-        document.getElementById("message").textContent = "error: password required"; //define the dialogue
+        document.getElementById("message").textContent = "error: press [enter] to submit password"; //define the dialogue
         console.log("clicked computer     " + computer.numConvos); 
     }
      
