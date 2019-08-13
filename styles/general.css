@@ -11,7 +11,7 @@ body {
 
     margin: 0;
     padding: 0;
-    text-transform: lowercase;
+
 
 }
 
@@ -65,19 +65,19 @@ a:hover {
     height: 450px;
     width: 750px;
     display: inline-block;
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-image: url("/images/sample-wall.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/sample-wall.png");
 }
 #view2 {
     height: 450px;
     width: 750px;
     display: inline-block;
 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-image: url("/images/view-2.png"); 
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/view-2.png");
+
 }
 
 #view3 {
@@ -85,9 +85,9 @@ a:hover {
     width: 750px;
     display: inline-block;
 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-image: url("/images/computer.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/computer.png");
 }
 
 #view4 {
@@ -95,9 +95,9 @@ a:hover {
     width: 750px;
     display: inline-block;
 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-image: url("/images/hallway1.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/hallway1.png");
 }
 
 #text-area {
@@ -128,5 +128,13 @@ a:hover {
 
 }
 
+<<<<<<< HEAD
+=======
+#android {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+>>>>>>> 7030798620d24cff0d47c3c6097423786428d51e
 
 
