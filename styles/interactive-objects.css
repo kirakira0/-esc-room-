@@ -168,107 +168,107 @@
     width: 5vh;
     background-color: #48687B;
     margin-left: 5px;
-    font-family: 'Times New Roman'; 
+    font-family: 'Times New Roman';
   }
 
 #book1 {
-background-color: #A23A1B;
-position: relative; 
+background-color: #F6EC66;
+position: relative;
 /* margin-left: 100px; */
 }
 #book5 {
-    background-color: #A23A1B;
-    position: relative; 
+    background-color: #9152A1;
+    position: relative;
     /* margin-left: 100px; */
 }
 #book7 {
-    background-color: #A23A1B;
-    position: relative; 
+    background-color: #5FAE93;
+    position: relative;
     /* margin-left: 100px; */
 }
 #book14 {
-    background-color: #A23A1B;
-    position: relative; 
+    background-color: #FA623C;
+    position: relative;
     /* margin-left: 100px; */
 }
 #book19 {
-    background-color: #A23A1B;
-    position: relative; 
+    background-color: #DE6BC7;
+    position: relative;
     /* margin-left: 100px; */
 }
 #book25 {
-    background-color: #A23A1B;
-    position: relative; 
+    background-color: #FDB454;
+    position: relative;
     /* margin-left: 100px; */
 }
 #book28 {
-    background-color: #A23A1B;
-    position: relative; 
+    background-color: #386BF9;
+    position: relative;
     /* margin-left: 100px; */
 }
 
 #book1 p {
     transform: rotate(-90deg);
-    width: 200px; 
-    margin: 0px; 
-    position: absolute; 
-    left: -85px; 
-    bottom: 90px; 
+    width: 200px;
+    margin: 0px;
+    position: absolute;
+    left: -85px;
+    bottom: 90px;
 }
-<<<<<<< HEAD
+
 
 #book5text {
     transform: rotate(-90deg);
-    width: 200px; 
-    margin: 0px; 
-    position: absolute; 
-    left: -85px; 
-    bottom: 90px; 
+    width: 200px;
+    margin: 0px;
+    position: absolute;
+    left: -85px;
+    bottom: 90px;
 }
 
 #book7text {
     transform: rotate(-90deg);
-    width: 200px; 
-    margin: 0px; 
-    position: absolute; 
-    left: -85px; 
-    bottom: 90px; 
+    width: 200px;
+    margin: 0px;
+    position: absolute;
+    left: -85px;
+    bottom: 90px;
 }
 
 #book14text {
     transform: rotate(-90deg);
-    width: 200px; 
-    margin: 0px; 
-    position: absolute; 
-    left: -85px; 
-    bottom: 90px; 
+    width: 200px;
+    margin: 0px;
+    position: absolute;
+    left: -85px;
+    bottom: 90px;
 }
 
 #book19text {
     transform: rotate(-90deg);
-    width: 200px; 
-    margin: 0px; 
-    position: absolute; 
-    left: -85px; 
-    bottom: 90px; 
+    width: 200px;
+    margin: 0px;
+    position: absolute;
+    left: -85px;
+    bottom: 90px;
 }
 
 #book25text {
     transform: rotate(-90deg);
-    width: 200px; 
-    margin: 0px; 
-    position: absolute; 
-    left: -85px; 
-    bottom: 90px; 
+    width: 200px;
+    margin: 0px;
+    position: absolute;
+    left: -85px;
+    bottom: 90px;
 }
 
 #book28text {
     transform: rotate(-90deg);
-    width: 200px; 
-    margin: 0px; 
-    position: absolute; 
-    left: -85px; 
-    bottom: 90px; 
+    width: 200px;
+    margin: 0px;
+    position: absolute;
+    left: -85px;
+    bottom: 90px;
 }
 
 /* #book2 {
