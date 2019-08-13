@@ -77,6 +77,19 @@ var end = [
     "end::"
 ]
 
+var panel1 = [
+    "::There's a panel on the wall here.",
+    "::Seems that this facility was developed by LUCILLE INDUSTRIES.",
+    "::Not surprising. Most everything is these days.",
+    "end::"
+]
+
+var panel2 = [
+    "::Perhaps there is some kind of clue behind this panel.",
+    "::Too bad you don't have anything to remove the locks holding it in place.",
+    "end::"
+]
+
 console.log(window.location.href); 
 
 conversation = dialogue1; 

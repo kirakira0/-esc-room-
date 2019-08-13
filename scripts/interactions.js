@@ -3,15 +3,17 @@ const computerElement = document.querySelector("#computer-text");
 const passwordSubmitButton = document.querySelector("#password-button");
 var password = '00000'; 
 let x = document.getElementById("password-submit").value ; 
+const panel = document.querySelector('#panel'); 
 
 const computer = {
     numConvos: 0
 }
 
 const books = {
-    titles: ["Brave New World", "Little Women", "The Alchemist", "The Bluest Eye", "Animal Farm", "1984", "Huckleberry Finn"],
-    authors: ["Adolphus Huxley", "Louisa May Alcott", "Paulo Coelho", "Toni Morrison", "George Orwell", "George Orwell", "Mark Twain"],
-    id: ["16729", '28871', '27711', '98900', '11524', '08999', '26915']
+    titles: ["Brave New World", "Little Women", "Heart of Darkness", "Invisible Man", "Night", "", ""],
+    authors: ["Adolphus Huxley", "Louisa May Alcott", "Joseph Conrad", "Ralph Ellison", "Elie Wiesel", "", ""],
+    id: ["16729", '28871', '27711', '98900', '11524', '08999', '26915'],
+    hint: ['courage', 'small', 'dim', 'translucent', ]
 }
 
 android.addEventListener('click', e=> {
@@ -41,7 +43,6 @@ computerElement.addEventListener('click', e=> {
 })
 
 passwordSubmitButton.addEventListener('click', e=> {
-    console.log("clciked submit"); 
     x = document.getElementById("password-submit"); 
     if ((x.value) === password) {
         document.getElementById("message").textContent = "PASSWORD CORRECT"; 
@@ -49,6 +50,10 @@ passwordSubmitButton.addEventListener('click', e=> {
     else {
         document.getElementById("message").textContent = "PASSWORD INCORRECT"; 
     }
+})
+
+panel.addEventListener('click', e => {
+    showText(panel1); 
 })
 
 
