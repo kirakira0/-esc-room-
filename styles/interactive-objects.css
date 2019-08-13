@@ -1,17 +1,17 @@
 /* #android-img {
-    width: 750px; 
-    height: 450px; 
+    width: 750px;
+    height: 450px;
 } */
 
 /* #computer {
-    background-color: red; 
-    width: 50px; 
-    height: 50px; 
+    background-color: red;
+    width: 50px;
+    height: 50px;
 } */
 
 /* #doors-img {
-    width: 750px; 
-    height: 450px; 
+    width: 750px;
+    height: 450px;
 } */
 
 * {
@@ -19,9 +19,9 @@
 }
 
 #android {
-    display: flex; 
-    justify-content: center; 
-    margin-top: 120px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
 }
 
 .face {
@@ -30,12 +30,12 @@
     width: 150px;
     height: 200px;
     padding: 30px;
-    background: slategray;
+    background: #8EACD9;
     transition: .3s ease-in-out;
 }
 
 .face:hover {
-    background: grey;
+    background: #99ACC8;
 }
 
 .eye {
@@ -57,24 +57,24 @@
     }
 }
 #view5 {
-    display: flex; 
+    display: flex;
     align-content: center;
     /* justify-content: flex-start;  */
-    flex-direction: row; 
+    flex-direction: row;
 }
 #door-left {
 
-    
-    background: gray; 
-    height: 200px; 
-    width: 100px; 
+
+    background: gray;
+    height: 200px;
+    width: 100px;
     margin-left: 0px;
 }
 #door-right {
 
-    
-    background: darkgray; 
-    height: 200px; 
-    width: 100px; 
-    margin-right: 0px; 
+
+    background: darkgray;
+    height: 200px;
+    width: 100px;
+    margin-right: 0px;
 }
