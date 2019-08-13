@@ -1,9 +1,17 @@
 const android = document.querySelector("#android");
 const computerElement = document.querySelector("#computer-text"); 
-const passwordSubmitButton = document.querySelector("#password-submit"); 
+const passwordSubmitButton = document.querySelector("#password-button");
+var password = '00000'; 
+let x = document.getElementById("password-submit").value ; 
 
 const computer = {
     numConvos: 0
+}
+
+const books = {
+    titles: ["Brave New World", "Little Women", "The Alchemist", "The Bluest Eye", "Animal Farm", "1984", "Huckleberry Finn"],
+    authors: ["Adolphus Huxley", "Louisa May Alcott", "Paulo Coelho", "Toni Morrison", "George Orwell", "George Orwell", "Mark Twain"],
+    id: ["16729", '28871', '27711', '98900', '11524', '08999', '26915']
 }
 
 android.addEventListener('click', e=> {
@@ -34,7 +42,13 @@ computerElement.addEventListener('click', e=> {
 
 passwordSubmitButton.addEventListener('click', e=> {
     console.log("clciked submit"); 
-    document.getElementById("message").textContent = "PASSWORD INCORRECT"; //define the dialogue
+    x = document.getElementById("password-submit"); 
+    if ((x.value) === password) {
+        document.getElementById("message").textContent = "PASSWORD CORRECT"; 
+    }
+    else {
+        document.getElementById("message").textContent = "PASSWORD INCORRECT"; 
+    }
 })
 
 
