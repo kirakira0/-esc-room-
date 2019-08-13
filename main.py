@@ -9,6 +9,7 @@ import pprint
 import logging
 from google.appengine.api import users
 from User_Models import *
+from Score_Methods import *
 
 def make_new_user(name, email):
     user = User(
@@ -72,8 +73,11 @@ class WinVer1Handler(webapp2.RequestHandler):
 class LeaderboardHandler(webapp2.RequestHandler):
     def get(self):
         print("GET")
+        lowscore = {
+            "lowestscore": OrderedScores()
+        }
         form_template = the_jinja_env.get_template('templates/leaderboard.html')
-        self.response.write(form_template.render())  # the response
+        self.response.write(form_template.render(lowscore))  # the response
 
 class CreditsHandler(webapp2.RequestHandler):
     def get(self):

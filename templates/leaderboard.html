@@ -10,8 +10,14 @@
     <h1>
       leaderboard
     <h1>
-    <div id = "Leader_box">
+    <table id = "Leader_box">
+      {% for user in lowestscore %}
+      <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+      </tr>
+      {% endfor %}
       <!-- insert box here -->
-    </div>
+    </table>
   </body>
 </html>
