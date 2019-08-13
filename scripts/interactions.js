@@ -1,5 +1,5 @@
 const android = document.querySelector("#android");
-const computerElement = document.querySelector("#computer"); 
+const computerElement = document.querySelector("#computer-text"); 
 
 const computer = {
     numConvos: 0
@@ -22,6 +22,7 @@ computerElement.addEventListener('click', e=> {
     if (computer.numConvos === 0) {
         computer.numConvos++; 
         //showText( computer1 );
+        document.getElementById("message").textContent = "error: password required"; //define the dialogue
         console.log("clicked computer     " + computer.numConvos); 
     }
      

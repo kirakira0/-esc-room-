@@ -32,7 +32,7 @@ var understand = [
 
 var explainMore = [
     "Android CC193::You must explore the laboratory and gather clues to help you Upload.",
-    "Android CC193::You may wish to start by interacting with the computer on the opposite end of the room.",
+    "Android CC193::You may wish to start by interacting with the computer one room over.",
     "Android CC193::It contains the appropriate software to assist you.",
     "Android CC193::You may also speak to me if you need further assistance.", 
     "Android CC193::Do you understand?", 
@@ -52,7 +52,27 @@ var android1 = [
 ]
 
 var android2 = [
-    "Android CC193::I see that you've spoken to the computer.", 
+    "Android CC193::A password?", 
+    "Android CC193::There never used to be a password to access that computer ...",
+    "Android CC193::The AI hosted on that machine is quite facetious, though.",
+    "Android CC193::It very well may have required password authentication out of spite.",
+    "2options::",
+    "What do I do now?.::android3",
+    "[leave conversation]::end"
+]
+
+var computer1 = [
+
+]
+
+var android3 = [
+    "Android CC193::Prehaps there are clues hidden about the laboratory.", 
+    "Android CC193::Search for something that resembles a code.",
+    "end::"
+]
+
+var end = [
+    "Android CC193::Goodbye!", 
     "end::"
 ]
 
