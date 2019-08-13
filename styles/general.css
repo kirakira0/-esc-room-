@@ -73,7 +73,7 @@ a:hover {
     height: 450px;
     width: 750px;
     display: inline-block;
-    border-color: white; 
+    border-color: white;
     /* background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/images/view-2.png"); */
@@ -95,10 +95,38 @@ a:hover {
     height: 450px;
     width: 750px;
     display: inline-block;
-
+    background-color: #A2A68E;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    border: 2px solid grey;
+    box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/images/hallway1.png");
+
+    /* background-image: url("/images/hallway1.png"); */
+}
+
+#book1 {
+  height: 200px;
+  width: 50px;
+  background-color: #A23A1B;
+  margin-left: 100px;
+}
+
+#book2 {
+  height: 247px;
+  width: 45px;
+  background-color: #C1BD30;
+  margin-left: 80px;
+}
+
+#book3 {
+  height: 120px;
+  width: 30px;
+  background-color: #1D437D;
+  margin-left: 90px;
+  padding-top: 200px;
 }
 
 #view7 {
@@ -138,6 +166,3 @@ a:hover {
     margin-top: 10px;
 
 }
-
-
-
