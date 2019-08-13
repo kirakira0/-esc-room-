@@ -77,7 +77,7 @@ a:hover {
     /* background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/images/view-2.png"); */
-    background-color: slategray; 
+    background-color: slategray;
 
 }
 
@@ -95,15 +95,15 @@ a:hover {
     height: 450px;
     width: 750px;
     display: inline-block;
-    background-color: #A2A68E;
+    background-color: ##26282B;
     display: grid;
-    grid-column: 1;
-    grid-row: 2;
-    border: 2px solid grey;
+    border: 10px solid #8EA6CB;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
     /* background-image: url("/images/hallway1.png"); */
 }
 
