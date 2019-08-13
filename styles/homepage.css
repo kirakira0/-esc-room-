@@ -17,6 +17,13 @@ body {
   animation:
     typing 5.5s steps(40, end),
     blink-caret .75s step-end infinite;
+  font-size: 55px;
+  font-style: bold;
+  display:flex;
+  flex-direction: column;
+  padding-top: 40px;
+  max-width: 310px;
+
 }
 
 /* The typing effect */
@@ -40,12 +47,13 @@ body {
   margin-top: 20px;
 }
 
-h1 {
-  font-size: 55px;
+/* h1 { */
+  /* font-size: 55px;
   font-style: bold;
   display:flex;
   flex-direction: column;
-}
+  padding-top: 40px; */
+/* } */
 
 h2 {
     font-size: 35px;

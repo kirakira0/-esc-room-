@@ -3,7 +3,7 @@ body {
   font-family: 'Blinker', 'Times New Roman';
   color: white;
   text-align: center;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }
 
 h1 {
