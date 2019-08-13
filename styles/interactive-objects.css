@@ -168,14 +168,21 @@
     width: 5vh;
     background-color: #48687B;
     margin-left: 5px;
+    font-family: 'Times New Roman'; 
   }
-  
+
 #book1 {
 background-color: #A23A1B;
+position: relative; 
 /* margin-left: 100px; */
 }
 #book1 p {
-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 200px; 
+    margin: 0px; 
+    position: absolute; 
+    left: -85px; 
+    bottom: 90px; 
 }
 
 /* #book2 {
