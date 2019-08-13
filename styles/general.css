@@ -132,7 +132,14 @@ a:hover {
   margin-left: 80px;
 }
 
-/* #book3 {
+#book3 {
+  height: 230px;
+  width: 45px;
+  background-color: #C1BD30;
+  margin-left: 80px;
+}
+
+/* #book4 {
   height: 120px;
   width: 30px;
   background-color: #1D437D;
