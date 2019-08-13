@@ -1,5 +1,4 @@
-
-* {
+{
     box-sizing: border-box;
 }
 
@@ -48,15 +47,20 @@
     flex-direction: row;
 }
 #door-left {
+
     background: #8EA6CB;
     height: 200px;
     width: 100px;
     display: inline-block;
-    z-index: 0;
+      z-index: 0;
 
 }
 #door-right {
+<<<<<<< HEAD
+    background: darkgray;
+=======
     background: #8EA6CB;
+>>>>>>> 3626a3781bffbd4839480519c2cf16f950acd151
     height: 200px;
     width: 100px;
     display: inline-block;
@@ -142,10 +146,7 @@
     bottom: 10px;
 
     z-index: 5;
-    /* margin-top: -40px;
-    margin-left: 545px;  */
 }
-
 
 #screw3 {
     background: lightgray;
@@ -158,8 +159,6 @@
     top: 10px;
 
     z-index: 5;
-    /* margin-top: -375px;
-    margin-left: 15px;  */
 }
 
 #screw4 {
@@ -173,8 +172,6 @@
     bottom: 10px;
 
     z-index: 5;
-    /* margin-top: -375px;
-    margin-left: 15px;  */
 }
 
 
@@ -219,7 +216,7 @@
   }
 
 #book1 {
-background-color: #F6EC66;
+background-color: #E5DF3C;
 position: relative;
 /* margin-left: 100px; */
 }
@@ -254,6 +251,7 @@ position: relative;
     /* margin-left: 100px; */
 }
 
+<<<<<<< HEAD
 #book1 p {
     transform: rotate(-90deg);
     width: 200px;
@@ -291,6 +289,9 @@ position: relative;
 }
 
 #book19text {
+=======
+.booktext {
+>>>>>>> 3626a3781bffbd4839480519c2cf16f950acd151
     transform: rotate(-90deg);
     width: 200px;
     margin: 0px;
@@ -298,6 +299,7 @@ position: relative;
     left: -85px;
     bottom: 90px;
 }
+<<<<<<< HEAD
 
 #book25text {
     transform: rotate(-90deg);
@@ -316,25 +318,5 @@ position: relative;
     left: -85px;
     bottom: 90px;
 }
-
-/* #book2 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-}
-
-#book3 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-} */
-
-/* #book4 {
-  height: 120px;
-  width: 30px;
-  background-color: #1D437D;
-  margin-left: 90px;
-  padding-top: 200px;
-} */
+=======
+>>>>>>> 3626a3781bffbd4839480519c2cf16f950acd151
