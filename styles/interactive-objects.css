@@ -52,7 +52,7 @@
     height: 200px;
     width: 100px;
     display: inline-block;
-    z-index: 0;
+      z-index: 0;
 
 }
 #door-right {
@@ -262,25 +262,3 @@ position: relative;
     left: -85px;
     bottom: 90px;
 }
-
-/* #book2 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-}
-
-#book3 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-} */
-
-/* #book4 {
-  height: 120px;
-  width: 30px;
-  background-color: #1D437D;
-  margin-left: 90px;
-  padding-top: 200px;
-} */
