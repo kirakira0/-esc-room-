@@ -1,4 +1,5 @@
 const android = document.querySelector("#android");
+const computerElement = document.querySelector("#computer"); 
 
 const computer = {
     numConvos: 0
@@ -9,6 +10,19 @@ android.addEventListener('click', e=> {
     //if ... check cases, call different text for each  
     if (computer.numConvos === 0) {
         showText(android1);
+    }
+    else if (computer.numConvos === 1) {
+        showText(android2);
+    }
+     
+})
+
+computerElement.addEventListener('click', e=> {
+    //if ... check cases, call different text for each  
+    if (computer.numConvos === 0) {
+        computer.numConvos++; 
+        //showText( computer1 );
+        console.log("clicked computer     " + computer.numConvos); 
     }
      
 })

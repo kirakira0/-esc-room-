@@ -1,7 +1,6 @@
-#android {
-    background-color: blue; 
-    width: 50px; 
-    height: 50px; 
+#android-img {
+    width: 750px; 
+    height: 450px; 
 }
 
 #computer {
@@ -9,3 +8,8 @@
     width: 50px; 
     height: 50px; 
 }
+
+/* #doors-img {
+    width: 750px; 
+    height: 450px; 
+} */

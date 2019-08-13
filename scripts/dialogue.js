@@ -51,6 +51,11 @@ var android1 = [
     "end::"
 ]
 
+var android2 = [
+    "Android CC193::I see that you've spoken to the computer.", 
+    "end::"
+]
+
 console.log(window.location.href); 
 
 conversation = dialogue1; 

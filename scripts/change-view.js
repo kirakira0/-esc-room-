@@ -2,6 +2,11 @@ document.getElementById("view1").style.display = "inline-block";
 document.getElementById("view2").style.display = "none";
 document.getElementById("view3").style.display = "none";
 document.getElementById("view4").style.display = "none";
+document.getElementById("view5").style.display = "none";
+document.getElementById("view6").style.display = "none";
+document.getElementById("view7").style.display = "none";
+document.getElementById("view8").style.display = "none";
+
 
 
 let currentView = 1; 
@@ -24,7 +29,7 @@ function checkKey(e) {
             
         currentView--;
         if (currentView == 0) {
-            currentView = 4; 
+            currentView = 8; 
         }
 
         showView(); 
@@ -34,7 +39,7 @@ function checkKey(e) {
         console.log(currentView); 
         
         currentView++;
-        if (currentView == 5) {
+        if (currentView == 9) {
             currentView = 1; 
         }
 
@@ -45,7 +50,7 @@ function checkKey(e) {
 }
 
 function showView() {
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 8; i++) {
 
         const element = document.querySelector(`#view${i}`); 
         if (i === currentView) {
