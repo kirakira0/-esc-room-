@@ -65,18 +65,18 @@
 }
 
 #panel {
-    background: dimgray; 
+    background: dimgray;
     height: 400px;
     width: 600px;
-    position: relative; 
+    position: relative;
 }
 
 #panel:hover {
-    background: slategray; 
+    background: slategray;
 }
 
 #panel-text {
-    padding: 150px; 
+    padding: 150px;
 }
 
 #screw1 {
@@ -85,12 +85,12 @@
     height: 40px;
     border-radius: 50%;
 
-    position: absolute; 
-    left: 10px; 
-    top: 10px; 
+    position: absolute;
+    left: 10px;
+    top: 10px;
 
     z-index: 5;
-    /* margin-top: -65px; 
+    /* margin-top: -65px;
     margin-left: 15px;  */
 }
 
@@ -99,13 +99,13 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    
+
     position: absolute;
-    left: 10px; 
-    bottom: 10px;  
+    left: 10px;
+    bottom: 10px;
 
     z-index: 5;
-    /* margin-top: -40px; 
+    /* margin-top: -40px;
     margin-left: 545px;  */
 }
 
@@ -115,13 +115,13 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    
-    position: absolute; 
-    right: 10px; 
-    top: 10px; 
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
 
     z-index: 5;
-    /* margin-top: -375px; 
+    /* margin-top: -375px;
     margin-left: 15px;  */
 }
 
@@ -130,22 +130,22 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    
-    position: absolute; 
-    right: 10px; 
-    bottom: 10px; 
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 
     z-index: 5;
-    /* margin-top: -375px; 
+    /* margin-top: -375px;
     margin-left: 15px;  */
 }
 
 
 #secret-message {
-    margin-top: -10px; 
+    margin-top: -10px;
     /* margin-right: 0px;  */
-    position: absolute; 
-    z-index: -1; 
+    position: absolute;
+    z-index: -1;
 }
 
 #bookshelf {
@@ -157,11 +157,11 @@
     align-items: center;
     justify-content: space-evenly;
   }
-  
+
   .shelf {
     border: 5px solid #8EA6CB;
   }
-  
+
   .book {
     display: inline-block;
     height: 30vh;
@@ -169,7 +169,7 @@
     background-color: #48687B;
     margin-left: 5px;
   }
-  
+
 #book1 {
 background-color: #A23A1B;
 /* margin-left: 100px; */
@@ -177,25 +177,3 @@ background-color: #A23A1B;
 #book1 p {
 transform: rotate(-90deg);
 }
-
-/* #book2 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-}
-
-#book3 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-} */
-
-/* #book4 {
-  height: 120px;
-  width: 30px;
-  background-color: #1D437D;
-  margin-left: 90px;
-  padding-top: 200px;
-} */
