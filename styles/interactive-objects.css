@@ -1,7 +1,7 @@
-#android-img {
+/* #android-img {
     width: 750px; 
     height: 450px; 
-}
+} */
 
 #computer {
     background-color: red; 
@@ -13,3 +13,46 @@
     width: 750px; 
     height: 450px; 
 } */
+
+* {
+    box-sizing: border-box;
+}
+
+#android {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 120px; 
+}
+
+.face {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 200px;
+    padding: 30px;
+    background: slategray;
+    transition: .3s ease-in-out;
+}
+
+.face:hover {
+    background: grey;
+}
+
+.eye {
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-transform-origin: 50%;
+    -webkit-animation: blink 5s infinite;
+}
+
+@-webkit-keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+}
