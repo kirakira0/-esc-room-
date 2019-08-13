@@ -10,10 +10,10 @@ const computer = {
 }
 
 const books = {
-    titles: ["Brave New World", "Little Women", "Heart of Darkness", "Invisible Man", "Night", "", ""],
-    authors: ["Adolphus Huxley", "Louisa May Alcott", "Joseph Conrad", "Ralph Ellison", "Elie Wiesel", "", ""],
+    titles: ["Brave New World", "Little Women", "Heart of Darkness", "Invisible Man", "The Scarlet Letter", "Fahrenheit 451", "Lord of the Flies"],
+    authors: ["Adolphus Huxley", "Louisa May Alcott", "Joseph Conrad", "Ralph Ellison", "Nathaniel Hawthorne", "Ray Bradbury", "William Golding"],
     id: ["16729", '28871', '27711', '98900', '11524', '08999', '26915'],
-    hint: ['courage', 'small', 'dim', 'translucent', ]
+    hint: ['courage', 'small', 'dim', 'translucent', 'red', 'fire', 'king']
 }
 
 android.addEventListener('click', e=> {
