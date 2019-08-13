@@ -7,47 +7,57 @@ document.getElementById("view6").style.display = "none";
 document.getElementById("view7").style.display = "none";
 document.getElementById("view8").style.display = "none";
 
+const passwordBox = document.querySelector("#password-box");
 
+//hide password box at beginning
+document.getElementById("password-box").style.display = "none";
 
 let currentView = 1; 
+
 
 document.onkeydown = checkKey;
 
 function checkKey(e) {
+    
+    if (!dialogueRunning) {
 
-    e = e || window.event;
+        e = e || window.event;
 
-    if (e.keyCode == '38' || e.keyCode == '87') { //UP ARROW KEY OR 'W'
-        console.log("up arrow pressed"); 
-    }
-    else if (e.keyCode == '40' || e.keyCode == "83") { //DOWN ARROW KEY OR 'S'
-        console.log("down arrow pressed"); 
+        if (e.keyCode == '38' || e.keyCode == '87') { //UP ARROW KEY OR 'W'
+            if (currentView == 2) { //only show the password box when in view 2
+                document.getElementById("password-box").style.display = "block";
+                console.log("n");
+            }
+        }
+        else if (e.keyCode == '40' || e.keyCode == "83") { //DOWN ARROW KEY OR 'S'
+            console.log("down arrow pressed"); 
 
-    }
-    else if (e.keyCode == '37' || e.keyCode == '65') { //LEFT ARROW KEY OR 'A'
-        console.log(currentView); 
+        }
+        else if (e.keyCode == '37' || e.keyCode == '65') { //LEFT ARROW KEY OR 'A'
+            console.log(currentView); 
+                
+            currentView--;
+            if (currentView == 0) {
+                currentView = 8; 
+            }
+
+            showView(); 
+
+        }
+        else if (e.keyCode == '39' || e.keyCode == '68') { //RIGHT ARROW KEY OR 'D' 
+            console.log(currentView); 
             
-        currentView--;
-        if (currentView == 0) {
-            currentView = 8; 
+            currentView++;
+            if (currentView == 9) {
+                currentView = 1; 
+            }
+
+            showView(); 
+
         }
-
-        showView(); 
-
     }
-    else if (e.keyCode == '39' || e.keyCode == '68') { //RIGHT ARROW KEY OR 'D' 
-        console.log(currentView); 
-        
-        currentView++;
-        if (currentView == 9) {
-            currentView = 1; 
-        }
-
-        showView(); 
-
-    }
-
 }
+
 
 function showView() {
     for (let i = 1; i <= 8; i++) {

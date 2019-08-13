@@ -1,6 +1,7 @@
 //the dialogue 
 var index = 0;
 run_clock('clockdiv',deadline);
+var dialogueRunning = true; 
 
 
 //document.getElementById("timer").style.display = "none";
@@ -97,10 +98,12 @@ const option2Button = document.querySelector("#option-button2");
 
 //ADVANCE DIALOGUE (what to do if the user hits the continue button)
 submitButton.addEventListener('click', e=> {
+    console.log(dialogueRunning); 
+    
     colonPos = conversation[index].indexOf("::");       
     //console.log(conversation[index + 2].substring(0, conversation[index + 2].indexOf("::"))); 
     if (index >= conversation.length) { //the conversation is finished
-        run_clock('clockdiv',deadline);
+        dialogueRunning = false;         
         hideText(); 
     }
     else {
@@ -178,6 +181,7 @@ option2Button.addEventListener('click', e=> {
 })
 
 function hideText() {
+    dialogueRunning = false; 
     document.getElementById("dialogue-text").style.display = "none";
     document.getElementById("name-text").style.display = "none";
     document.getElementById("submit-button").style.display = "none";
@@ -187,7 +191,7 @@ function hideText() {
 }
 
 function showText(newConversation) {
-  
+    dialogueRunning = true; 
 
     document.getElementById("dialogue-text").style.display = "block";
     document.getElementById("name-text").style.display = "block";

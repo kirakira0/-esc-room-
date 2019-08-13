@@ -18,12 +18,17 @@ android.addEventListener('click', e=> {
 })
 
 computerElement.addEventListener('click', e=> {
+    var clicks = 0; 
     //if ... check cases, call different text for each  
-    if (computer.numConvos === 0) {
+    if (computer.numConvos === 1) {
+        document.getElementById("hint").textContent = "[book hint]"; //define the dialogue
+    }   
+    else if (computer.numConvos === 0) {
         computer.numConvos++; 
         //showText( computer1 );
-        document.getElementById("message").textContent = "error: press [enter] to submit password"; //define the dialogue
+        document.getElementById("message").textContent = "error: [UP ARROW] or [W] to submit password"; //define the dialogue
         console.log("clicked computer     " + computer.numConvos); 
     }
-     
 })
+
+
