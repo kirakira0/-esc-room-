@@ -35,7 +35,7 @@ computerElement.addEventListener('click', e=> {
     else if (computer.numConvos === 0) {
         computer.numConvos++; 
         //showText( computer1 );
-        document.getElementById("message").textContent = "error: [UP ARROW] or [W] to submit password"; //define the dialogue
+        document.getElementById("message").textContent = "error: [UP ARROW] to enter password"; //define the dialogue
         console.log("clicked computer     " + computer.numConvos); 
     }
 })

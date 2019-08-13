@@ -1,18 +1,3 @@
-/* #android-img {
-    width: 750px;
-    height: 450px;
-} */
-
-/* #computer {
-    background-color: red;
-    width: 50px;
-    height: 50px;
-} */
-
-/* #doors-img {
-    width: 750px;
-    height: 450px;
-} */
 
 * {
     box-sizing: border-box;
@@ -44,7 +29,7 @@
     height: 15px;
     border-radius: 50%;
     -webkit-transform-origin: 50%;
-    -webkit-animation: blink 5s infinite;
+    -webkit-animation: blink 4s infinite;
 }
 
 @-webkit-keyframes blink {
@@ -81,6 +66,95 @@
 
 #panel {
     background: dimgray; 
-    height: 200px;
-    width: 100px;
+    height: 400px;
+    width: 600px;
+    position: relative; 
+}
+
+#panel:hover {
+    background: slategray; 
+}
+
+#panel-text {
+    padding: 150px; 
+}
+
+/* .screw {
+    display: flex;
+    justify-content: space-between;
+
+    background: lightgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+} */ 
+
+#screw1 {
+    background: lightgray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    position: absolute; 
+    left: 10px; 
+    top: 10px; 
+
+    z-index: 5;
+    /* margin-top: -65px; 
+    margin-left: 15px;  */
+}
+
+#screw2 {
+    background: lightgray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    position: absolute;
+    left: 10px; 
+    bottom: 10px;  
+
+    z-index: 5;
+    /* margin-top: -40px; 
+    margin-left: 545px;  */
+}
+
+
+#screw3 {
+    background: lightgray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    position: absolute; 
+    right: 10px; 
+    top: 10px; 
+
+    z-index: 5;
+    /* margin-top: -375px; 
+    margin-left: 15px;  */
+}
+
+#screw4 {
+    background: lightgray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    position: absolute; 
+    right: 10px; 
+    bottom: 10px; 
+
+    z-index: 5;
+    /* margin-top: -375px; 
+    margin-left: 15px;  */
+}
+
+
+#secret-message {
+    margin-top: -10px; 
+    /* margin-right: 0px;  */
+    position: absolute; 
+    z-index: -1; 
 }
