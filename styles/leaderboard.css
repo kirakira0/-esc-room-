@@ -3,16 +3,47 @@ body {
   background-color: black;
   text-align: center;
   font-family: 'Blinker', 'Times New Roman';
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 90%;
+  height: 100vh;
 }
 
 h1 {
   font-size: 50px;
   text-style: bold;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  text-align: center;
+  padding: 0;
 }
 
 #Leader_box {
-  display: inline-block;
+  grid-row: 2;
+  grid-column: 2;
   background-color: #8EACD9;
   border: 4px solid white;
+  width: 400px;
+  height:400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+td {
+  padding: 5px;
+}
+
+
+#name {
+  font-weight:bold;
+}
+
+#score {
+  font-size: 30px;
+  grid-row: 2;
+  grid-column: 2;
+  padding-left: 100px;
 }
