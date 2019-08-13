@@ -7,15 +7,15 @@ run_clock('clockdiv',deadline);
 
 
 var dialogue1 = [
-    "  ::The room you awaken in is cold and silent save for the soft hum of electrical generators.", 
-    "  ::The only other sign of life in the room is a broken-looking android in the far corner.",
-    "  ::Upon noticing you, it calls out in a small, robotic voice.",  
-    "?::Oh ... You're not supposed to be here.", 
-    "?::Hello, human. I am Android CC193.",
-    "Android CC193::It seems that you have awoken in the middle of your Upload.",
-    "Android CC193::This is an unfortunate development.",
-    "Android CC193::You must join the rest of mankind in the virtual world as quickly as possible.",  
-    "Android CC193::Although your auto Upload malfunctioned, there are enough resources in this laboratory for you to perform a manual transfer.",
+    // "  ::The room you awaken in is cold and silent save for the soft hum of electrical generators.", 
+    // "  ::The only other sign of life in the room is a broken-looking android in the far corner.",
+    // "  ::Upon noticing you, it calls out in a small, robotic voice.",  
+    // "?::Oh ... You're not supposed to be here.", 
+    // "?::Hello, human. I am Android CC193.",
+    // "Android CC193::It seems that you have awoken in the middle of your Upload.",
+    // "Android CC193::This is an unfortunate development.",
+    // "Android CC193::You must join the rest of mankind in the virtual world as quickly as possible.",  
+    // "Android CC193::Although your auto Upload malfunctioned, there are enough resources in this laboratory for you to perform a manual transfer.",
     "Android CC193::Do you understand what you must do?", 
     "2options::",
     "Yes, I understand.::understand",
@@ -47,7 +47,8 @@ var winVer1 = [
 
 var android1 = [
     "Android CC193::Sorry human; I wish there was more that I could do for you.",
-    "Android CC193::Have you spoken to the computer yet? It may be able to help you more than I."
+    "Android CC193::Have you spoken to the computer yet? It may be able to help you more than I.", 
+    "end::"
 ]
 
 console.log(window.location.href); 
@@ -155,11 +156,19 @@ function hideText() {
     index = 0; 
 }
 
-function showText() {
+function showText(newConversation) {
+  
+
     document.getElementById("dialogue-text").style.display = "block";
     document.getElementById("name-text").style.display = "block";
     document.getElementById("submit-button").style.display = "block";
     document.getElementById("option-button1").style.display = "none";
     document.getElementById("option-button2").style.display = "none";
-    index = 0; 
+
+    index = 0;   
+    conversation = newConversation; 
+    document.getElementById("dialogue-text").textContent = conversation[index].substring(colonPos + 2); //define the dialogue
+    document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos);; //define the name
+
+    console.log(conversation); 
 }
