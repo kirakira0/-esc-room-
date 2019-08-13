@@ -56,3 +56,25 @@
         transform: scale(1, 1);
     }
 }
+#view5 {
+    display: flex; 
+    align-content: center;
+    /* justify-content: flex-start;  */
+    flex-direction: row; 
+}
+#door-left {
+
+    
+    background: gray; 
+    height: 200px; 
+    width: 100px; 
+    margin-left: 0px;
+}
+#door-right {
+
+    
+    background: darkgray; 
+    height: 200px; 
+    width: 100px; 
+    margin-right: 0px; 
+}

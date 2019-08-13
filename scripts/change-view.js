@@ -7,6 +7,11 @@ document.getElementById("view6").style.display = "none";
 document.getElementById("view7").style.display = "none";
 document.getElementById("view8").style.display = "none";
 
+const passwordBox = document.querySelector("#password-box");
+
+//hide password box at beginning
+document.getElementById("password-box").style.display = "none";
+
 
 
 let currentView = 1; 
@@ -18,7 +23,10 @@ function checkKey(e) {
     e = e || window.event;
 
     if (e.keyCode == '38' || e.keyCode == '87') { //UP ARROW KEY OR 'W'
-        console.log("up arrow pressed"); 
+        if (currentView == 2) { //only show the password box when in view 2
+            document.getElementById("password-box").style.display = "block";
+            console.log("n");
+        }
     }
     else if (e.keyCode == '40' || e.keyCode == "83") { //DOWN ARROW KEY OR 'S'
         console.log("down arrow pressed"); 
