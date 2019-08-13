@@ -176,7 +176,92 @@ background-color: #A23A1B;
 position: relative; 
 /* margin-left: 100px; */
 }
+#book5 {
+    background-color: #A23A1B;
+    position: relative; 
+    /* margin-left: 100px; */
+}
+#book7 {
+    background-color: #A23A1B;
+    position: relative; 
+    /* margin-left: 100px; */
+}
+#book14 {
+    background-color: #A23A1B;
+    position: relative; 
+    /* margin-left: 100px; */
+}
+#book19 {
+    background-color: #A23A1B;
+    position: relative; 
+    /* margin-left: 100px; */
+}
+#book25 {
+    background-color: #A23A1B;
+    position: relative; 
+    /* margin-left: 100px; */
+}
+#book28 {
+    background-color: #A23A1B;
+    position: relative; 
+    /* margin-left: 100px; */
+}
+
 #book1 p {
+    transform: rotate(-90deg);
+    width: 200px; 
+    margin: 0px; 
+    position: absolute; 
+    left: -85px; 
+    bottom: 90px; 
+}
+
+#book5text {
+    transform: rotate(-90deg);
+    width: 200px; 
+    margin: 0px; 
+    position: absolute; 
+    left: -85px; 
+    bottom: 90px; 
+}
+
+#book7text {
+    transform: rotate(-90deg);
+    width: 200px; 
+    margin: 0px; 
+    position: absolute; 
+    left: -85px; 
+    bottom: 90px; 
+}
+
+#book14text {
+    transform: rotate(-90deg);
+    width: 200px; 
+    margin: 0px; 
+    position: absolute; 
+    left: -85px; 
+    bottom: 90px; 
+}
+
+#book19text {
+    transform: rotate(-90deg);
+    width: 200px; 
+    margin: 0px; 
+    position: absolute; 
+    left: -85px; 
+    bottom: 90px; 
+}
+
+#book25text {
+    transform: rotate(-90deg);
+    width: 200px; 
+    margin: 0px; 
+    position: absolute; 
+    left: -85px; 
+    bottom: 90px; 
+}
+
+#book28text {
     transform: rotate(-90deg);
     width: 200px; 
     margin: 0px; 
