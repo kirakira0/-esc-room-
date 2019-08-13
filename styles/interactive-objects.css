@@ -1,5 +1,4 @@
-
-* {
+{
     box-sizing: border-box;
 }
 
@@ -48,16 +47,12 @@
     flex-direction: row;
 }
 #door-left {
-
-
     background: gray;
     height: 200px;
     width: 100px;
     margin-left: 0px;
 }
 #door-right {
-
-
     background: darkgray;
     height: 200px;
     width: 100px;
@@ -105,10 +100,7 @@
     bottom: 10px;
 
     z-index: 5;
-    /* margin-top: -40px;
-    margin-left: 545px;  */
 }
-
 
 #screw3 {
     background: lightgray;
@@ -121,8 +113,6 @@
     top: 10px;
 
     z-index: 5;
-    /* margin-top: -375px;
-    margin-left: 15px;  */
 }
 
 #screw4 {
@@ -136,8 +126,6 @@
     bottom: 10px;
 
     z-index: 5;
-    /* margin-top: -375px;
-    margin-left: 15px;  */
 }
 
 
@@ -172,7 +160,7 @@
   }
 
 #book1 {
-background-color: #F6EC66;
+background-color: #E5DF3C;
 position: relative;
 /* margin-left: 100px; */
 }
@@ -215,7 +203,6 @@ position: relative;
     left: -85px;
     bottom: 90px;
 }
-
 
 #book5text {
     transform: rotate(-90deg);
@@ -270,27 +257,3 @@ position: relative;
     left: -85px;
     bottom: 90px;
 }
-
-/* #book2 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-}
-
-#book3 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-} */
-
-/* #book4 {
-  height: 120px;
-  width: 30px;
-  background-color: #1D437D;
-  margin-left: 90px;
-  padding-top: 200px;
-} */
-=======
->>>>>>> 6b4e2f9883c673534a16606dd4fd53188d6f6510
