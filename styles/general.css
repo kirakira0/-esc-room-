@@ -88,64 +88,6 @@ a:hover {
     /* background-color: dimgray;  */
 }
 
-#view4 {
-    height: 450px;
-    width: 750px;
-    display: inline-block;
-    background-color: ##26282B;
-    display: grid;
-    border: 5px solid #8EA6CB;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-row-gap: 10px;
-    /* background-image: url("/images/hallway1.png"); */
-}
-
-#bookshelf {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.shelf {
-  border: 5px solid #8EA6CB;
-  height: 30vh;
-
-
-}
-#book1 {
-  height: 150px;
-  width: 50px;
-  background-color: #A23A1B;
-  margin-left: 100px;
-}
-
-#book2 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-}
-
-#book3 {
-  height: 230px;
-  width: 45px;
-  background-color: #C1BD30;
-  margin-left: 80px;
-}
-
-/* #book4 {
-  height: 120px;
-  width: 30px;
-  background-color: #1D437D;
-  margin-left: 90px;
-  padding-top: 200px;
-} */
 
 #view7 {
     height: 450px;
