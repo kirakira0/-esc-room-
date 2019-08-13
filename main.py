@@ -8,7 +8,14 @@ from google.appengine.api import urlfetch
 import pprint
 import logging
 from google.appengine.api import users
+from User_Models import *
 
+def make_new_user(name, email):
+    user = User(
+        user_name = name,
+        email = email
+    )
+    user.put()
 
 # This initializes the jinja2 Environment.
 # This will be the same in every app that uses the jinja2 templating library.
@@ -27,6 +34,9 @@ class MainPageHandler(webapp2.RequestHandler):
 
         google_user = users.get_current_user()
         if google_user:
+            db_user = User.query().filter(User.email == google_user.email()).get()
+            if not db_user:
+                make_new_user(google_user.nickname(),google_user.email())
             self.response.write(form_template.render({
                 'url':users.create_logout_url('/'),
                 "username": google_user.nickname(),
