@@ -1,5 +1,6 @@
 const android = document.querySelector("#android");
 const computerElement = document.querySelector("#computer-text"); 
+const passwordSubmitButton = document.querySelector("#password-submit"); 
 
 const computer = {
     numConvos: 0
@@ -29,6 +30,11 @@ computerElement.addEventListener('click', e=> {
         document.getElementById("message").textContent = "error: [UP ARROW] or [W] to submit password"; //define the dialogue
         console.log("clicked computer     " + computer.numConvos); 
     }
+})
+
+passwordSubmitButton.addEventListener('click', e=> {
+    console.log("clciked submit"); 
+    document.getElementById("message").textContent = "PASSWORD INCORRECT"; //define the dialogue
 })
 
 

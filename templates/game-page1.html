@@ -13,12 +13,9 @@
 </head>
 <body>
     <div id="game-page">
-        <!-- <div id="header"> -->
-        <!-- <header> -->
             <p id="return-home"><a href="/">Return Home</a></p>
             <p id="timer">10:00</p>
             <p id="user-name">{{username}}</p>
-        <!-- </header> -->
         <div id="image-area"> <!--this is where we can put images (i.e. the escape room background-->
             <div id="view1">
                 <!-- <img id ="image1" src="/images/sample-wall.png" alt="view 1"> -->
@@ -38,11 +35,11 @@
                     <h5>copyright ©  2600 lucille incorporated</h5>
                     <h3 id="message"></h3>
                     <h3 id="hint"></h3>
-                    <form id="password-box">
-                            Password:<br>
-                            <input type="text" name="firstname"><br>
-                            <input id="password-submit" type="submit" value="Submit">
-                    </form>
+                    <div id="password-box">
+                            <p>Password:</p>
+                            <input type="text" name="submitted-password">
+                            <button id="password-submit" value="Submit">Submit</button>
+                    </div>
                 </div>  
             </div>
             <div id="view3">
