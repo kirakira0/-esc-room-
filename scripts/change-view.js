@@ -23,17 +23,17 @@ function checkKey(e) {
 
         e = e || window.event;
 
-        if (e.keyCode == '38' || e.keyCode == '87') { //UP ARROW KEY OR 'W'
+        if (e.keyCode == '38') { //UP ARROW KEY OR 'W'
             if (currentView == 2) { //only show the password box when in view 2
                 document.getElementById("password-box").style.display = "block";
                 console.log("n");
             }
         }
-        else if (e.keyCode == '40' || e.keyCode == "83") { //DOWN ARROW KEY OR 'S'
+        else if (e.keyCode == '40') { //DOWN ARROW KEY OR 'S'
             console.log("down arrow pressed"); 
 
         }
-        else if (e.keyCode == '37' || e.keyCode == '65') { //LEFT ARROW KEY OR 'A'
+        else if (e.keyCode == '37') { //LEFT ARROW KEY OR 'A'
             console.log(currentView); 
                 
             currentView--;
@@ -44,7 +44,7 @@ function checkKey(e) {
             showView(); 
 
         }
-        else if (e.keyCode == '39' || e.keyCode == '68') { //RIGHT ARROW KEY OR 'D' 
+        else if (e.keyCode == '39') { //RIGHT ARROW KEY OR 'D' 
             console.log(currentView); 
             
             currentView++;
