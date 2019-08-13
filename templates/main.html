@@ -10,13 +10,14 @@
     <title>Homepage</title>
 </head>
 <body id="homepage">
-    <h1 id = "escape_title">[esc] room</h1>
-    <h2 id = "welcome">welcome {{username}}</h2>
-    <h2 id = "play"><a href="/game-page1">play</a></h2>
-    <h2 id = "leader"><a href="/leaderboard">leaderboard</a></h2>
-    <h2 id = "credits"><a href="/credits">credits</a></h2>
-    <h2><a href = "{{url}}">{{loginMess}}</a></h2>
-
+  <div class="typewriter">
+    <h1>[esc] room</h1>
+    <h2 class="menuOption" id = "welcome">welcome {{username}}</h2>
+    <h2 class="menuOption" id = "play"><a href="/game-page1">play</a></h2>
+    <h2 class="menuOption" id = "leader"><a href="/leaderboard">leaderboard</a></h2>
+    <h2 class="menuOption" id = "credits"><a href="/credits">credits</a></h2>
+    <h2 id="logIn"><a href = "{{url}}">{{loginMess}}</a></h2>
+</div>
     <!--<script src="/scripts/    .js"></script>  just putting this reference here in case we need it later  -->
 </body>
 </html>

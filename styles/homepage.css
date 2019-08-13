@@ -2,21 +2,20 @@ body {
     color: white;
     background-color: black;
     text-align: center;
-
     font-family: 'Blinker', 'Times New Roman';
-
-    /* height: 100vh;
-
+    height: 100vh;
     margin: 0;
-    padding: 0; */
-    /* .typewriter h1 { */
+}
+
+.typewriter h1 {
+  color: white;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em white; /* The typwriter cursor */
+  border-right: .15em solid #47BAE2; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation:
-    typing 3.5s steps(40, end),
+    typing 5.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -29,19 +28,27 @@ body {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: #47BAE2; }
 }
 
+#welcome {
+  margin-bottom: 60px;
+  /* font-size: 30px; */
 }
 
-#escape_title {
-    font-size: 50px;
-    font-style: bold;
-    display:flex;
-    flex-direction: column;
+#logIn {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 55px;
+  font-style: bold;
+  display:flex;
+  flex-direction: column;
 }
 
 h2 {
     font-size: 35px;
     font-style: none;
+    padding: 20px;
 }
