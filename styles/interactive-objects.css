@@ -260,7 +260,8 @@ position: relative;
     bottom: 90px;
 }
 
-.Stairs {
+
+#stair_1 {
   border-bottom: 100px solid #555;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
@@ -268,4 +269,28 @@ position: relative;
   width: 700px;
   top: 50px;
   position: relative;
+}
+
+#stair_2 {
+
+}
+
+#stair_3 {
+
+}
+
+#stair_4 {
+
+}
+
+#stair_5 {
+
+}
+
+#stair_6 {
+
+}
+
+#stair_7{
+
 }
