@@ -17,11 +17,12 @@ codeSubmitButton.addEventListener('click', e=> {
     console.log(userSubmittedCode.value.toLowerCase().replace(/the /g, '').replace(/[^a-z0-9]/g, "")); 
     userSubmittedCode = document.getElementById('code-submit'); 
     if (userSubmittedCode.value.toLowerCase().replace(/the /g, '').replace(/[^a-z0-9]/g, "") === code.toLowerCase().replace(/the /g, '').replace(/[^a-z0-9]/g, "")) { //they got it right 
-        document.getElementById('hint').textContent = "CODE ENTERED";  //sucess message 
+        
+        document.getElementById('hint').textContent = "CODE ENTERED -- SECURITY DOWN";  //sucess message 
         document.getElementById('code-box').style.display = "none"; //hide the code submit box 
         puzzle2Solved = true; 
-        // document.getElementById("view2").style.backgroundColor = 'red'; 
-        
+        document.getElementById("view2").style.backgroundColor = 'red'; 
+
     }
     else { //they got it wrong
         document.getElementById('hint').textContent = "INCORRECT"; 

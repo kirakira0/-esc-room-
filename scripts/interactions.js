@@ -2,10 +2,10 @@ const android = document.querySelector("#android");
 const computerElement = document.querySelector("#computer-text"); 
 const passwordSubmitButton = document.querySelector("#password-button");
 const codeSubmitButton = document.querySelector('#code-button'); 
+const keySubmitButton = document.querySelector('#key-button'); 
 
 var puzzle1Solved = false; 
 var puzzle2Solved = false; 
-var virusInstalled = false; 
 
 let x = document.getElementById("password-submit").value ; 
 
@@ -36,6 +36,11 @@ android.addEventListener('click', e=> {
     }
     else if (computer.numConvos === 2) {
         showText(android4); 
+        resetDialogue(); 
+    }
+
+    if (puzzle2Solved) {
+        showText(android5); 
         resetDialogue(); 
     }
      
@@ -109,6 +114,7 @@ console.log(book1.style);
 // }
 
 document.getElementById('code-box').style.display = "none"; 
+document.getElementById('key-box').style.display = "none"; 
 
 passwordSubmitButton.addEventListener('click', e=> {
     x = document.getElementById("password-submit"); 
