@@ -66,8 +66,9 @@ panel.addEventListener('click', e => {
 })
 
 for (let i = 0; i < bookQuerySelectors.length; i++) {
-    bookQuerySelectors[i].addEventListener('mouseover', e => {
-        console.log('printed book'); 
+    bookQuerySelectors[i].addEventListener('click', e => {
+        console.log('clicked book'); 
+        displayBookInfo(); 
     })
 }
 

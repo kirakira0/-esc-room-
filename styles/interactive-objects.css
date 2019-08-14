@@ -209,14 +209,17 @@
     border: 5px solid #8EA6CB;
   }
 
-  .book {
+.book {
     display: inline-block;
     height: 30vh;
     width: 5vh;
     background-color: #48687B;
     margin-left: 5px;
     font-family: 'Times New Roman';
-  }
+}
+.book:hover {
+    opacity: 0.8; 
+}
 
 #book1 {
 background-color: #F6EC66;
