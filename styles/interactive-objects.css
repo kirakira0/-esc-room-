@@ -215,37 +215,37 @@
 }
 
 #book1 {
-background-color: #E5DF3C;
+background-color: aqua;
 position: relative;
 /* margin-left: 100px; */
 }
 #book5 {
-    background-color: #9152A1;
+    background-color: darkslategray;
     position: relative;
     /* margin-left: 100px; */
 }
 #book7 {
-    background-color: #5FAE93;
+    background-color: turquoise;
     position: relative;
     /* margin-left: 100px; */
 }
 #book14 {
-    background-color: #FA623C;
+    background-color: navy;
     position: relative;
     /* margin-left: 100px; */
 }
 #book19 {
-    background-color: #DE6BC7;
+    background-color: darkgray;
     position: relative;
     /* margin-left: 100px; */
 }
 #book25 {
-    background-color: #FDB454;
+    background-color: slateblue;
     position: relative;
     /* margin-left: 100px; */
 }
 #book28 {
-    background-color: #386BF9;
+    background-color: skyblue;
     position: relative;
     /* margin-left: 100px; */
 }

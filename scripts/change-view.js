@@ -19,7 +19,7 @@ document.onkeydown = checkKey;
 
 function checkKey(e) {
 
-    if (!dialogueRunning) {
+    // if (!dialogueRunning) {
 
         e = e || window.event;
 
@@ -57,7 +57,7 @@ function checkKey(e) {
             showView(); 
 
         }
-    }
+    // }
 }
 
 

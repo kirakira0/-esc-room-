@@ -18,12 +18,8 @@ const books = {
     titles: ["Brave New World", "Little Women", "Heart of Darkness", "Invisible Man", "The Scarlet Letter", "Fahrenheit 451", "Lord of the Flies"],
     authors: ["Adolphus Huxley", "Louisa May Alcott", "Joseph Conrad", "Ralph Ellison", "Nathaniel Hawthorne", "Ray Bradbury", "William Golding"],
     id: ["16729", '28871', '27711', '98900', '11524', '08999', '26915'],
-    hint: ['courage', 'small', 'dim', 'translucent', 'red', 'fire', 'king']
-}
-let specialBooks = [1, 5, 7, 14, 19, 25, 28]; 
-for (let i = 0; i < specialBooks.length; i++) {
-    // console.log(document.getElementById("book" + specialBooks[i]).textContent); 
-    // document.getElementById("book" + specialBooks[i]).textContent = books.titles[i]; 
+    hint: ['courage', 'small', 'dim', 'translucent', 'red', 'fire', 'king'], 
+    color: ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 }
 
 android.addEventListener('click', e=> {
@@ -99,6 +95,8 @@ book6.addEventListener('click', e=>{
 book7.addEventListener('click', e=>{
     displayBookInfo(6); 
 })
+
+console.log(book1.style); 
 
 // for (let i = 0; i < bookQuerySelectors.length; i++) {
 //     bookQuerySelectors[i].addEventListener('click', e => {
