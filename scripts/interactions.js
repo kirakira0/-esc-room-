@@ -45,6 +45,7 @@ android.addEventListener('click', e=> {
 
 panel.addEventListener('click', e => {
     showText(panel1); 
+    resetDialogue(); 
 })
 
 
