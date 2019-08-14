@@ -294,15 +294,29 @@ position: relative;
 }
 
 #stair_4 {
-
+  border-bottom: 70px solid #450;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: -30px;
+  width: 400px;
+  top: -460px;
+  position: relative;
+  margin-left: 150px;
 }
 
 #stair_5 {
-
+  border-bottom: 60px solid #650;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: -60px;
+  width: 300px;
+  top: -590px;
+  position: relative;
+  margin-left: 200px;
 }
 
 #stair_6 {
-
+  
 }
 
 #stair_7{
