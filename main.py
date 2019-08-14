@@ -61,7 +61,7 @@ class GamePage1Handler(webapp2.RequestHandler):
             }))  # the response
         else:
             self.response.write(form_template.render({
-                "username": "DEFAULT"
+                "username": "HUMAN"
             }))  # the response
 
 class WinVer1Handler(webapp2.RequestHandler):
