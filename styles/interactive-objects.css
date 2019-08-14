@@ -103,7 +103,7 @@
 
 #panel-text {
     padding: 155px;
-    text-shadow: 2px 2px black; 
+    text-shadow: 2px 2px black;
 }
 
 /* .screw {
@@ -261,11 +261,11 @@ position: relative;
 }
 
 .Stairs {
-  border-bottom: 150px solid #555;
+  border-bottom: 100px solid #555;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  height: 250px;
-  width: 450px;
+  height: 300px;
+  width: 700px;
   top: 50px;
   position: relative;
 }
