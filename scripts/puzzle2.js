@@ -29,9 +29,30 @@ codeSubmitButton.addEventListener('click', e=> {
     }
 })
 
-if (puzzle2Solved) {
-    if (doorsClosed) {
-
-        //if you click the doors, make them slide open 
+doorLeft.addEventListener('click', e=>{
+    if (puzzle2Solved) { 
+        // if (!doorLeftOpened && !doorRightOpened) {
+            
+            console.log('not yet opened');         
+            doorLeftOpened = true; 
+            console.log("clicked door left"); 
+            console.log(doorLeftOpened); 
+        // }
     }
+})
+
+doorRight.addEventListener('click', e=>{
+    if (puzzle2Solved) { 
+        // if (!doorLeftOpened && !doorRightOpened) {
+            console.log('not yet opened');         
+            doorRightOpened = true; 
+            console.log("clicked door left"); 
+            console.log(doorLeftOpened); 
+        // }
+    }
+})
+
+
+if (doorLeftOpened && doorRightOpened) {
+    console.log("the doors have opened"); 
 }

@@ -3,7 +3,13 @@ const computerElement = document.querySelector("#computer-text");
 const passwordSubmitButton = document.querySelector("#password-button");
 const codeSubmitButton = document.querySelector('#code-button'); 
 const keySubmitButton = document.querySelector('#key-button'); 
-const doorsClosed = true; 
+const doorLeft = document.querySelector('#door-left'); 
+const doorRight = document.querySelector('#door-right'); 
+
+
+var doorLeftOpened = false;
+var doorRightOpened = false; 
+
 
 var puzzle1Solved = false; 
 var puzzle2Solved = true; 
