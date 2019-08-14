@@ -11,7 +11,7 @@ userSubmittedCode = document.getElementById("code-submit");
 
 //set code to the AUTHOR of the book whose cover color matches the panel text color 
 code = books.authors[randomInt]; 
-console.log(code); 
+console.log(code);
 
 codeSubmitButton.addEventListener('click', e=> {
     console.log(userSubmittedCode.value.toLowerCase().replace(/the /g, '').replace(/[^a-z0-9]/g, "")); 
@@ -20,6 +20,8 @@ codeSubmitButton.addEventListener('click', e=> {
         document.getElementById('hint').textContent = "CODE ENTERED";  //sucess message 
         document.getElementById('code-box').style.display = "none"; //hide the code submit box 
         puzzle2Solved = true; 
+        // document.getElementById("view2").style.backgroundColor = 'red'; 
+        
     }
     else { //they got it wrong
         document.getElementById('hint').textContent = "INCORRECT"; 

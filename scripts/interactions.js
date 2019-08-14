@@ -5,7 +5,7 @@ const codeSubmitButton = document.querySelector('#code-button');
 
 var puzzle1Solved = false; 
 var puzzle2Solved = false; 
-
+var virusInstalled = false; 
 
 let x = document.getElementById("password-submit").value ; 
 
@@ -122,7 +122,7 @@ passwordSubmitButton.addEventListener('click', e=> {
         // document.getElementById("message").style.display = "none"; 
         // document.getElementById("hint").style.display = "none"; 
         document.getElementById("password-box").style.display = "none"; 
-        document.getElementById("hint").textContent = "error: code required to launch UPLOAD -- hint: creator"; 
+        document.getElementById("hint").textContent = "error: manual security overridecode required -- please enter password -- hint: creator"; 
         document.getElementById('code-box').style.display = "block"; 
 
         

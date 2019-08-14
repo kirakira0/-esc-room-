@@ -81,6 +81,15 @@ var android4 = [
     "end::"
 ]
 
+var virus = [
+    "::"
+]
+
+var android5 = [
+    "Android CC193::Human! You've solved another puzzle!",
+    "Android CC193::It seems, however, that that old computer is trying to prevent your Upload."
+]
+
 var end = [
     "Android CC193::Goodbye!", 
     "end::"
@@ -99,6 +108,8 @@ var panel2 = [
     "::Too bad you don't have anything to remove the locks holding it in place.",
     "end::"
 ]
+
+
 
 /* BOOK TITLE DIALOGUES */ 
 
