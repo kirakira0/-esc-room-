@@ -1,6 +1,8 @@
 const android = document.querySelector("#android");
 const computerElement = document.querySelector("#computer-text"); 
 const passwordSubmitButton = document.querySelector("#password-button");
+const codeSubmitButton = document.querySelector('#code-button'); 
+
 
 let x = document.getElementById("password-submit").value ; 
 
@@ -62,6 +64,7 @@ panel.addEventListener('click', e => {
 
 
 //THE BOOK ID PUZZLE 
+
 var passwordIndex = Math.floor(Math.random() * 6); //generate a random number between 1 and 7  
 var password = books.id[passwordIndex]; //set the password 
 //document.getElementById("hint").textContent = books.hint[passwordIndex]; //add the appropriate hint 
@@ -104,18 +107,20 @@ book7.addEventListener('click', e=>{
 //     })
 // }
 
+document.getElementById('code-box').style.display = "none"; 
+
 passwordSubmitButton.addEventListener('click', e=> {
     x = document.getElementById("password-submit"); 
-    if ((x.value) === password) {
+    if ((x.value) === password) { //what to do when the user enters the correct password 
         document.getElementById("message").textContent = "PASSWORD CORRECT"; 
         computer.numConvos = 2; 
         document.getElementById("copyright").style.display = "none"; //hide the copyright notice
-        document.getElementById("message").style.display = "none"; 
-        document.getElementById("hint").style.display = "none"; 
+        // document.getElementById("message").style.display = "none"; 
+        // document.getElementById("hint").style.display = "none"; 
         document.getElementById("password-box").style.display = "none"; 
-        
-        // showText(android4); 
-        // resetDialogue(); 
+        document.getElementById("hint").textContent = "error: code required to launch UPLOAD -- hint: no spaces in the title"; 
+        document.getElementById('code-box').style.display = "block"; 
+
     }
     else {
         document.getElementById("message").textContent = "PASSWORD INCORRECT"; 
