@@ -4,6 +4,7 @@ const passwordSubmitButton = document.querySelector("#password-button");
 const codeSubmitButton = document.querySelector('#code-button'); 
 
 var puzzle1Solved = false; 
+var puzzle2Solved = false; 
 
 
 let x = document.getElementById("password-submit").value ; 
