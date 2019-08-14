@@ -2,8 +2,6 @@ const android = document.querySelector("#android");
 const computerElement = document.querySelector("#computer-text"); 
 const passwordSubmitButton = document.querySelector("#password-button");
 
-var password = '00000'; 
-
 let x = document.getElementById("password-submit").value ; 
 
 const panel = document.querySelector('#panel'); 
@@ -38,33 +36,21 @@ android.addEventListener('click', e=> {
      
 })
 
-computerElement.addEventListener('click', e=> {
-    var clicks = 0; 
-    //if ... check cases, call different text for each  
-    if (computer.numConvos === 1) {
-        document.getElementById("hint").textContent = "[book hint]"; //define the dialogue
-    }   
-    else if (computer.numConvos === 0) {
-        computer.numConvos++; 
-        //showText( computer1 );
-        document.getElementById("message").textContent = "[enter] password"; //define the dialogue
-        console.log("clicked computer     " + computer.numConvos); 
-    }
-})
 
-passwordSubmitButton.addEventListener('click', e=> {
-    x = document.getElementById("password-submit"); 
-    if ((x.value) === password) {
-        document.getElementById("message").textContent = "PASSWORD CORRECT"; 
-    }
-    else {
-        document.getElementById("message").textContent = "PASSWORD INCORRECT"; 
-    }
-})
+
 
 panel.addEventListener('click', e => {
     showText(panel1); 
 })
+
+
+
+
+//THE BOOK ID PUZZLE 
+var passwordIndex = Math.floor(Math.random() * 6); //generate a random number between 1 and 7  
+var password = books.id[passwordIndex]; //set the password 
+//document.getElementById("hint").textContent = books.hint[passwordIndex]; //add the appropriate hint 
+console.log(passwordIndex);  
 
 const book1 = document.querySelector('#book1'); 
 const book2 = document.querySelector('#book5'); 
@@ -103,7 +89,30 @@ book7.addEventListener('click', e=>{
 //     })
 // }
 
+passwordSubmitButton.addEventListener('click', e=> {
+    x = document.getElementById("password-submit"); 
+    if ((x.value) === password) {
+        document.getElementById("message").textContent = "PASSWORD CORRECT"; 
+    }
+    else {
+        document.getElementById("message").textContent = "PASSWORD INCORRECT"; 
+    }
+})
 
 
+computerElement.addEventListener('click', e=> {
+    var clicks = 0; 
+    //if ... check cases, call different text for each  
+    if (computer.numConvos === 1) {
+        //document.getElementById("hint").textContent = "[book hint]"; //define the dialogue
+        document.getElementById("hint").textContent = "hint: " + books.hint[passwordIndex]; //add the appropriate hint 
+    }   
+    else if (computer.numConvos === 0) {
+        computer.numConvos++; 
+        //showText( computer1 );
+        document.getElementById("message").textContent = "[enter] password"; //define the dialogue
+        console.log("clicked computer     " + computer.numConvos); 
+    }
+})
 
 
