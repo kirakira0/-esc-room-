@@ -272,11 +272,25 @@ position: relative;
 }
 
 #stair_2 {
-
+  border-bottom: 90px solid #250;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0px;
+  width: 600px;
+  top: -140px;
+  position: relative;
+  margin-left: 50px;
 }
 
 #stair_3 {
-
+  border-bottom: 80px solid #400;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: -30px;
+  width: 500px;
+  top: -310px;
+  position: relative;
+  margin-left: 100px;
 }
 
 #stair_4 {
