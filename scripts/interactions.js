@@ -42,10 +42,20 @@ android.addEventListener('click', e=> {
 
 
 
+var panelClicks = 0; 
 
 panel.addEventListener('click', e => {
-    showText(panel1); 
-    resetDialogue(); 
+    if (panelClicks === 1) {
+        panelClicks = 2; 
+        showText(panel2); 
+        resetDialogue(); 
+    }
+    else if (panelClicks === 0) {
+        panelClicks = 1; 
+        showText(panel1); 
+        resetDialogue(); 
+    }
+
 })
 
 
