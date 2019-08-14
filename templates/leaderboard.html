@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title> Leaderboard </title>
   </head>
+  <link rel="stylesheet" type="text/css" href="/styles/general.css">
   <link rel="stylesheet" type="text/css" href="/styles/leaderboard.css">
   <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
   <body>
     <h1>
       leaderboard
     </h1>
+      <p id="return-home"><a href="/">Return Home</a></p>
     <table id = "Leader_box">
       {% for user in lowestscore %}
       <tr id = "rank" >
