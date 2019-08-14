@@ -262,7 +262,7 @@ position: relative;
 
 
 #stair_1 {
-  border-bottom: 100px solid #555;
+  border-bottom: 100px solid #6d90bd;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   height: 300px;
@@ -272,7 +272,7 @@ position: relative;
 }
 
 #stair_2 {
-  border-bottom: 90px solid #250;
+  border-bottom: 90px solid #59769c;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   height: 0px;
@@ -283,7 +283,7 @@ position: relative;
 }
 
 #stair_3 {
-  border-bottom: 80px solid #400;
+  border-bottom: 80px solid #445b78;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   height: -30px;
@@ -294,7 +294,7 @@ position: relative;
 }
 
 #stair_4 {
-  border-bottom: 70px solid #450;
+  border-bottom: 70px solid #314257;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   height: -30px;
@@ -305,7 +305,7 @@ position: relative;
 }
 
 #stair_5 {
-  border-bottom: 60px solid #650;
+  border-bottom: 60px solid #1e2733;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   height: -60px;
@@ -316,7 +316,7 @@ position: relative;
 }
 
 #stair_6 {
-  border-bottom: 40px solid #850;
+  border-bottom: 40px solid #11161c;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   height: -60px;
@@ -327,7 +327,7 @@ position: relative;
 }
 
 #stair_7{
-  border-bottom: 10px solid #900;
+  border-bottom: 10px solid #090c0f;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   height: -70px;

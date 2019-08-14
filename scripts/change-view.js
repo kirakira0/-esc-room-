@@ -23,6 +23,8 @@ function checkKey(e) {
 
         e = e || window.event;
 
+        
+
         if (e.keyCode == '13') { //UP ARROW KEY OR 'W'
             if (currentView == 2) { //only show the password box when in view 2
                 if (!puzzle1Solved) {
@@ -54,12 +56,12 @@ function checkKey(e) {
             if (currentView == 9) {
                 currentView = 1;
             }
-
-            console.log(currentView);
             showView(); 
 
         }
     // }
+
+    console.log(currentView); 
 }
 
 
@@ -71,7 +73,7 @@ function showView() {
             element.style.display = "inline-block";
         }
         else {
-            console.log(`#view${i}`);
+            //console.log(`#view${i}`);
             element.style.display = "none";
         }
     }

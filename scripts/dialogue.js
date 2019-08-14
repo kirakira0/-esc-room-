@@ -81,13 +81,12 @@ var android4 = [
     "end::"
 ]
 
-var virus = [
-    "::"
-]
-
 var android5 = [
     "Android CC193::Human! You've solved another puzzle!",
-    "Android CC193::It seems, however, that that old computer is trying to prevent your Upload."
+    "Android CC193::It seems that you still need one more password to access the Upload software ...", 
+    "Android CC193::But now that auto security is down, you will have more freedom to more around the laboratory.", 
+    "Android CC193::I'm sure you can find a way out!", 
+    "end::"
 ]
 
 var end = [
