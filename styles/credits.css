@@ -11,6 +11,10 @@ h1 {
   font-style: bold;
 
 }
+
+#creators {
+  width: 400px;
+}
 #Our_creators {
   font-size: 30px;
   font-style: bold;
