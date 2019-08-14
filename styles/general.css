@@ -45,16 +45,20 @@ a:hover {
 #return-home {
     grid-row: 1;
     grid-column: 1;
+    font-size: 20px;
+    margin-left: 100px; 
 }
 #timer {
     grid-row: 1;
     grid-column: 2;
+    font-size: 20px;
 }
 #user-name {
     grid-row: 1;
     grid-column: 3;
-}
+    font-size: 20px;
 
+}
 
 #image-area {
     grid-row: 2;

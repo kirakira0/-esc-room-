@@ -21,6 +21,7 @@ h1 {
   font-family: 'Blinker', 'Times New Roman';
   font-size:20px;
   text-decoration: none;
+  padding-top: 15px;
 }
 a {
     opacity: 0.5;
@@ -53,4 +54,5 @@ a:hover {
 #About_supporters
 {
   font-size: 20px;
+  padding-bottom: 80px;
 }
