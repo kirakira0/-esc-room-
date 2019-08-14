@@ -90,6 +90,9 @@ var panel2 = [
     "end::"
 ]
 
+/* BOOK TITLE DIALOGUES */ 
+
+
 console.log(window.location.href); 
 
 conversation = dialogue1; 
@@ -218,4 +221,12 @@ function showText(newConversation) {
     document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos);; //define the name
 
     console.log(conversation); 
+}
+
+function displayBookInfo() {
+    // const element = document.querySelector(`#view${i}`); 
+    document.getElementById("dialogue-text").style.display = "block";
+    document.getElementById("submit-button").style.display = "block";
+
+    document.getElementById("dialogue-text").textContent = "test sucessful"; 
 }

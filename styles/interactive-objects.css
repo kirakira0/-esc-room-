@@ -53,7 +53,7 @@
 
 }
 #door-right {
-    background: #8EA6CB;
+    background: darkgray;
     height: 200px;
     width: 100px;
     display: inline-block;
@@ -199,14 +199,17 @@
     border: 5px solid #8EA6CB;
   }
 
-  .book {
+.book {
     display: inline-block;
     height: 30vh;
     width: 5vh;
     background-color: #48687B;
     margin-left: 5px;
     font-family: 'Times New Roman';
-  }
+}
+.book:hover {
+    opacity: 0.8;
+}
 
 #book1 {
 background-color: #E5DF3C;
@@ -244,7 +247,10 @@ position: relative;
     /* margin-left: 100px; */
 }
 
-#book1 p {
+
+
+/* #book1 p {
+>>>>>>> ed59370351ed863d52f769429c7ba6d8055bf72e
     transform: rotate(-90deg);
     width: 200px;
     margin: 0px;
@@ -281,7 +287,10 @@ position: relative;
 }
 
 #book19text {
+<<<<<<< HEAD
 
+=======
+>>>>>>> ed59370351ed863d52f769429c7ba6d8055bf72e
     transform: rotate(-90deg);
     width: 200px;
     margin: 0px;
@@ -301,6 +310,15 @@ position: relative;
 }
 
 #book28text {
+    transform: rotate(-90deg);
+    width: 200px;
+    margin: 0px;
+    position: absolute;
+    left: -85px;
+    bottom: 90px;
+} */
+
+.booktext {
     transform: rotate(-90deg);
     width: 200px;
     margin: 0px;

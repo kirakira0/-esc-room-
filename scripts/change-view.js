@@ -23,7 +23,7 @@ function checkKey(e) {
 
         e = e || window.event;
 
-        if (e.keyCode == '38') { //UP ARROW KEY OR 'W'
+        if (e.keyCode == '13') { //UP ARROW KEY OR 'W'
             if (currentView == 2) { //only show the password box when in view 2
                 document.getElementById("password-box").style.display = "block";
                 console.log("n");
