@@ -7,7 +7,8 @@ const doorLeft = document.querySelector('#door-left');
 const doorRight = document.querySelector('#door-right'); 
 
 
-const doorsClosed = true; 
+var doorLeftOpened = false;
+var doorRightOpened = false; 
 
 
 var puzzle1Solved = false; 

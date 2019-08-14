@@ -52,7 +52,9 @@
     height: 200px;
     width: 100px;
     display: inline-block;
-      z-index: 0;
+    z-index: 0;
+    transform: rotateY(-120deg);
+    margin-left: -50px; 
 
 }
 #door-right {
@@ -61,6 +63,8 @@
     width: 100px;
     display: inline-block;
     z-index: 0;
+    transform: rotateY(120deg);
+    margin-right: -50px; 
 }
 
 .doors {
@@ -337,7 +341,6 @@ position: relative;
   position: relative;
   margin-left: 283px;
 }
-
 
 #door-right:hover {
     opacity: 0.9; 
