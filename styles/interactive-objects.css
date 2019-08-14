@@ -337,3 +337,11 @@ position: relative;
   position: relative;
   margin-left: 283px;
 }
+
+
+#door-right:hover {
+    opacity: 0.9; 
+}
+#door-left:hover {
+    opacity: 0.9; 
+}
