@@ -11,6 +11,30 @@ h1 {
   font-style: bold;
 
 }
+
+#return-home-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 150px;
+  color: white;
+  font-family: 'Blinker', 'Times New Roman';
+  font-size:20px;
+  text-decoration: none;
+}
+a {
+    opacity: 0.5;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+#creators {
+  width: 400px;
+}
 #Our_creators {
   font-size: 30px;
   font-style: bold;
