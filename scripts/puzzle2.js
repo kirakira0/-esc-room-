@@ -22,9 +22,16 @@ codeSubmitButton.addEventListener('click', e=> {
         document.getElementById('code-box').style.display = "none"; //hide the code submit box 
         puzzle2Solved = true; 
         document.getElementById("view2").style.backgroundColor = 'red'; 
-
+        document.getElementById('key-box').style.display = "block"; 
     }
     else { //they got it wrong
         document.getElementById('hint').textContent = "INCORRECT"; 
     }
 })
+
+if (puzzle2Solved) {
+    if (doorsClosed) {
+
+        //if you click the doors, make them slide open 
+    }
+}

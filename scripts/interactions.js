@@ -3,9 +3,10 @@ const computerElement = document.querySelector("#computer-text");
 const passwordSubmitButton = document.querySelector("#password-button");
 const codeSubmitButton = document.querySelector('#code-button'); 
 const keySubmitButton = document.querySelector('#key-button'); 
+const doorsClosed = true; 
 
 var puzzle1Solved = false; 
-var puzzle2Solved = false; 
+var puzzle2Solved = true; 
 
 let x = document.getElementById("password-submit").value ; 
 
