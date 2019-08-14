@@ -19,7 +19,7 @@ const books = {
     authors: ["Adolphus Huxley", "Louisa May Alcott", "Joseph Conrad", "Ralph Ellison", "Nathaniel Hawthorne", "Ray Bradbury", "William Golding"],
     id: ["16729", '28871', '27711', '98900', '11524', '08999', '26915'],
     hint: ['courage', 'small', 'dim', 'translucent', 'red', 'fire', 'king'], 
-    color: ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+    color: ['#58b4bf', '#2d818c', '#659bc2', '#306c96', '#364f61', '#18354a', '#082666']
 }
 
 android.addEventListener('click', e=> {
