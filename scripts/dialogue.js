@@ -62,13 +62,22 @@ var android2 = [
     "[leave conversation]::end"
 ]
 
-var computer1 = [
+// var computer1 = [
+//     "Computer::You're trying to Upload, aren't you?",
+//     "Computer::",
 
-]
+// ]
 
 var android3 = [
     "Android CC193::Prehaps there are clues hidden about the laboratory.", 
     "Android CC193::Search for something that resembles a code.",
+    "end::"
+]
+
+var android4 = [
+    "Android CC193::Congratulations for solving the password, human!",
+    "Android CC193::It seems that you need another code to access the Upload software.",
+    "Android CC193::Perhaps the bookshelf contains more answers?",
     "end::"
 ]
 
@@ -204,6 +213,13 @@ function hideText() {
     document.getElementById("option-button1").style.display = "none";
     document.getElementById("option-button2").style.display = "none";
     index = 0; 
+}
+
+function resetDialogue() {
+    index = 0; 
+    colonPos = conversation[index].indexOf("::"); //define the separator 
+    document.getElementById("dialogue-text").textContent = conversation[index].substring(colonPos + 2); //define the dialogue
+    document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos);; //define the name
 }
 
 function showText(newConversation) {

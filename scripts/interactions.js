@@ -33,6 +33,10 @@ android.addEventListener('click', e=> {
     else if (computer.numConvos === 1) {
         showText(android2);
     }
+    else if (computer.numConvos === 2) {
+        showText(android4); 
+        resetDialogue(); 
+    }
      
 })
 
@@ -50,7 +54,7 @@ panel.addEventListener('click', e => {
 var passwordIndex = Math.floor(Math.random() * 6); //generate a random number between 1 and 7  
 var password = books.id[passwordIndex]; //set the password 
 //document.getElementById("hint").textContent = books.hint[passwordIndex]; //add the appropriate hint 
-console.log(passwordIndex);  
+console.log(password);  
 
 const book1 = document.querySelector('#book1'); 
 const book2 = document.querySelector('#book5'); 
@@ -94,6 +98,13 @@ passwordSubmitButton.addEventListener('click', e=> {
     if ((x.value) === password) {
         document.getElementById("message").textContent = "PASSWORD CORRECT"; 
         computer.numConvos = 2; 
+        document.getElementById("copyright").style.display = "none"; //hide the copyright notice
+        document.getElementById("message").style.display = "none"; 
+        document.getElementById("hint").style.display = "none"; 
+        document.getElementById("password-box").style.display = "none"; 
+        
+        // showText(android4); 
+        // resetDialogue(); 
     }
     else {
         document.getElementById("message").textContent = "PASSWORD INCORRECT"; 
@@ -115,6 +126,8 @@ computerElement.addEventListener('click', e=> {
         console.log("clicked computer     " + computer.numConvos); 
     }
     else if (computer.numConvos === 2) { //CONVERSATION AFTER PUZZLE 1 HAS BEEN COMPLETED
+
+
 
     }
 })
