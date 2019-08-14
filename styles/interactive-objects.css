@@ -336,3 +336,30 @@ position: relative;
   position: relative;
   margin-left: 283px;
 }
+
+#wall_1 {
+  height: 250px;
+  width: 175px;
+  background-color: #555;
+  margin-left: 200px;
+  margin-top: 150px;
+}
+
+#wall_2 {
+  height: 200px;
+  width: 75px;
+  background-color: #550;
+  margin-left: 225px;
+  margin-top: 0px;
+}
+
+#diamond {
+  content: '';
+  position: absolute;
+  left: 550px;
+  top: 410px;
+  width: 50px;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: #555;
+}
