@@ -88,6 +88,7 @@ var end = [
 
 var panel1 = [
     "::There's a panel on the wall here.",
+    "::It reads ' Welcome to Escape Reality: a laboratory developed 2599 C.E. by LUCILLE INDUSTRIES.'", 
     "::Seems that this facility was developed by LUCILLE INDUSTRIES.",
     "::Not surprising. Most everything is these days.",
     "end::"
