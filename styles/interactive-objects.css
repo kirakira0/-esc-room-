@@ -1,6 +1,6 @@
-{
+/* {
     box-sizing: border-box;
-}
+} */
 
 #android {
     display: flex;
@@ -56,11 +56,7 @@
 
 }
 #door-right {
-<<<<<<< HEAD
     background: darkgray;
-=======
-    background: #8EA6CB;
->>>>>>> 3626a3781bffbd4839480519c2cf16f950acd151
     height: 200px;
     width: 100px;
     display: inline-block;
@@ -254,8 +250,7 @@ position: relative;
     /* margin-left: 100px; */
 }
 
-<<<<<<< HEAD
-#book1 p {
+/* #book1 p {
     transform: rotate(-90deg);
     width: 200px;
     margin: 0px;
@@ -292,9 +287,6 @@ position: relative;
 }
 
 #book19text {
-=======
-.booktext {
->>>>>>> 3626a3781bffbd4839480519c2cf16f950acd151
     transform: rotate(-90deg);
     width: 200px;
     margin: 0px;
@@ -302,7 +294,6 @@ position: relative;
     left: -85px;
     bottom: 90px;
 }
-<<<<<<< HEAD
 
 #book25text {
     transform: rotate(-90deg);
@@ -320,6 +311,13 @@ position: relative;
     position: absolute;
     left: -85px;
     bottom: 90px;
+} */
+
+.booktext {
+    transform: rotate(-90deg);
+    width: 200px;
+    margin: 0px;
+    position: absolute;
+    left: -85px;
+    bottom: 90px;
 }
-=======
->>>>>>> 3626a3781bffbd4839480519c2cf16f950acd151
