@@ -18,12 +18,18 @@
         var clock = document.getElementById(id);
         function update_clock(){
             var t = time_remaining(endtime);
-            if (t.minutes < 10) { //time < 10:00
-                timer.textContent = '0' + t.minutes + ':' + t.seconds;
-            }
-            else if (t.minutes < 10 && t.seconds < 10) {
+            if (t.minutes < 10 && t.seconds < 10) {
                 timer.textContent = '0' + t.minutes + ':' + '0' + t.seconds;
             }
+            else if (t.minutes < 10) {
+                timer.textContent = '0' + t.minutes + ':' + t.seconds;
+            }
+            // if (t.minutes < 10) { //time < 10:00
+            //     timer.textContent = '0' + t.minutes + ':' + t.seconds;
+            // }
+            // else if (t.minutes < 10 && t.seconds < 10) {
+            //     timer.textContent = '0' + t.minutes + ':' + '0' + t.seconds;
+            // }
             else { // time = 10:00
                 timer.textContent = t.minutes + ':' + '0' + t.seconds;
             }
