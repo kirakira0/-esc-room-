@@ -223,10 +223,14 @@ function showText(newConversation) {
     console.log(conversation); 
 }
 
-function displayBookInfo() {
+
+
+function displayBookInfo(bookIndex) {
     // const element = document.querySelector(`#view${i}`); 
     document.getElementById("dialogue-text").style.display = "block";
+    document.getElementById("name-text").style.display = "none";
     document.getElementById("submit-button").style.display = "block";
 
-    document.getElementById("dialogue-text").textContent = "test sucessful"; 
+    document.getElementById("dialogue-text").textContent = "Title: " + books.titles[bookIndex] + "; Author: " + books.authors[bookIndex] + "; ID: " + books.id[bookIndex]; 
+
 }

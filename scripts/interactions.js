@@ -9,6 +9,7 @@ let x = document.getElementById("password-submit").value ;
 const panel = document.querySelector('#panel'); 
 const bookQuerySelectors = document.querySelectorAll('.book'); 
 
+
 const computer = {
     numConvos: 0
 }
@@ -65,12 +66,42 @@ panel.addEventListener('click', e => {
     showText(panel1); 
 })
 
-for (let i = 0; i < bookQuerySelectors.length; i++) {
-    bookQuerySelectors[i].addEventListener('click', e => {
-        console.log('clicked book'); 
-        displayBookInfo(); 
-    })
-}
+const book1 = document.querySelector('#book1'); 
+const book2 = document.querySelector('#book5'); 
+const book3 = document.querySelector('#book7'); 
+const book4 = document.querySelector('#book14'); 
+const book5 = document.querySelector('#book19'); 
+const book6 = document.querySelector('#book25'); 
+const book7 = document.querySelector('#book28'); 
+
+book1.addEventListener('click', e=>{
+    displayBookInfo(0); 
+})
+book2.addEventListener('click', e=>{
+    displayBookInfo(1); 
+})
+book3.addEventListener('click', e=>{
+    displayBookInfo(2); 
+})
+book4.addEventListener('click', e=>{
+    displayBookInfo(3); 
+})
+book5.addEventListener('click', e=>{
+    displayBookInfo(4); 
+})
+book6.addEventListener('click', e=>{
+    displayBookInfo(5); 
+})
+book7.addEventListener('click', e=>{
+    displayBookInfo(6); 
+})
+
+// for (let i = 0; i < bookQuerySelectors.length; i++) {
+//     bookQuerySelectors[i].addEventListener('click', e => {
+//         console.log('clicked book'); 
+//         displayBookInfo(); 
+//     })
+// }
 
 
 
