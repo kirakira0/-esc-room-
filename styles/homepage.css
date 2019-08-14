@@ -21,8 +21,10 @@ body {
   font-style: bold;
   display:flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 0px;
   max-width: 310px;
+  margin-top: 40px;
+  /* height: 78px; */
 
 }
 
