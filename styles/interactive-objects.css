@@ -1,3 +1,6 @@
+/* {
+    box-sizing: border-box;
+} */
 
 #android {
     display: flex;
@@ -53,7 +56,7 @@
 
 }
 #door-right {
-    background: darkgray;
+    background: #8EA6CB;
     height: 200px;
     width: 100px;
     display: inline-block;
@@ -177,11 +180,11 @@
 
 .trapezoid {
   border-bottom: 150px solid #555;
-  border-left: 248px solid transparent;
-  border-right: 248.5px solid transparent;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
   height: 150px;
-  width: 700px;
-  top: 70px;
+  width: 204px;
+  top: -73px;
   position: relative;
 }
 
@@ -246,77 +249,6 @@ position: relative;
     position: relative;
     /* margin-left: 100px; */
 }
-
-
-
-/* #book1 p {
->>>>>>> ed59370351ed863d52f769429c7ba6d8055bf72e
-    transform: rotate(-90deg);
-    width: 200px;
-    margin: 0px;
-    position: absolute;
-    left: -85px;
-    bottom: 90px;
-}
-
-#book5text {
-    transform: rotate(-90deg);
-    width: 200px;
-    margin: 0px;
-    position: absolute;
-    left: -85px;
-    bottom: 90px;
-}
-
-#book7text {
-    transform: rotate(-90deg);
-    width: 200px;
-    margin: 0px;
-    position: absolute;
-    left: -85px;
-    bottom: 90px;
-}
-
-#book14text {
-    transform: rotate(-90deg);
-    width: 200px;
-    margin: 0px;
-    position: absolute;
-    left: -85px;
-    bottom: 90px;
-}
-
-#book19text {
-<<<<<<< HEAD
-
-=======
->>>>>>> ed59370351ed863d52f769429c7ba6d8055bf72e
-    transform: rotate(-90deg);
-    width: 200px;
-    margin: 0px;
-    position: absolute;
-    left: -85px;
-    bottom: 90px;
-}
-
-
-#book25text {
-    transform: rotate(-90deg);
-    width: 200px;
-    margin: 0px;
-    position: absolute;
-    left: -85px;
-    bottom: 90px;
-}
-
-#book28text {
-    transform: rotate(-90deg);
-    width: 200px;
-    margin: 0px;
-    position: absolute;
-    left: -85px;
-    bottom: 90px;
-} */
 
 .booktext {
     transform: rotate(-90deg);
