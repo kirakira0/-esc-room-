@@ -25,8 +25,10 @@ function checkKey(e) {
 
         if (e.keyCode == '13') { //UP ARROW KEY OR 'W'
             if (currentView == 2) { //only show the password box when in view 2
+                if (!puzzle1Solved) {
                 document.getElementById("password-box").style.display = "block";
-                console.log("n");
+                console.log(puzzle1Solved); 
+                }
             }
         }
         else if (e.keyCode == '40') { //DOWN ARROW KEY OR 'S'

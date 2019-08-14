@@ -3,6 +3,8 @@ const computerElement = document.querySelector("#computer-text");
 const passwordSubmitButton = document.querySelector("#password-button");
 const codeSubmitButton = document.querySelector('#code-button'); 
 
+var puzzle1Solved = false; 
+
 
 let x = document.getElementById("password-submit").value ; 
 
@@ -110,14 +112,19 @@ document.getElementById('code-box').style.display = "none";
 passwordSubmitButton.addEventListener('click', e=> {
     x = document.getElementById("password-submit"); 
     if ((x.value) === password) { //what to do when the user enters the correct password 
+        
+        puzzle1Solved = true;
+        
         document.getElementById("message").textContent = "PASSWORD CORRECT"; 
         computer.numConvos = 2; 
         document.getElementById("copyright").style.display = "none"; //hide the copyright notice
         // document.getElementById("message").style.display = "none"; 
         // document.getElementById("hint").style.display = "none"; 
         document.getElementById("password-box").style.display = "none"; 
-        document.getElementById("hint").textContent = "error: code required to launch UPLOAD -- hint: no spaces in the title"; 
+        document.getElementById("hint").textContent = "error: code required to launch UPLOAD -- hint: creator"; 
         document.getElementById('code-box').style.display = "block"; 
+
+        
 
     }
     else {
@@ -129,21 +136,29 @@ passwordSubmitButton.addEventListener('click', e=> {
 computerElement.addEventListener('click', e=> {
     var clicks = 0; 
     //if ... check cases, call different text for each  
-    if (computer.numConvos === 1) {
-        //document.getElementById("hint").textContent = "[book hint]"; //define the dialogue
-        document.getElementById("hint").textContent = "hint: " + books.hint[passwordIndex]; //add the appropriate hint 
-    }   
-    else if (computer.numConvos === 0) {
-        computer.numConvos++; 
-        //showText( computer1 );
-        document.getElementById("message").textContent = "[enter] password"; //define the dialogue
-        console.log("clicked computer     " + computer.numConvos); 
+
+    // if (!puzzle1Solved) {
+        if (computer.numConvos === 1) {
+            //document.getElementById("hint").textContent = "[book hint]"; //define the dialogue
+            document.getElementById("hint").textContent = "hint: " + books.hint[passwordIndex]; //add the appropriate hint 
+        }   
+        else if (computer.numConvos === 0) {
+            computer.numConvos++; 
+            //showText( computer1 );
+            document.getElementById("message").textContent = "[enter] password"; //define the dialogue
+            console.log("clicked computer     " + computer.numConvos); 
+        }
+        else if (computer.numConvos === 2) { //CONVERSATION AFTER PUZZLE 1 HAS BEEN COMPLETED
+
+        }
+    // }
+    else {
+
     }
-    else if (computer.numConvos === 2) { //CONVERSATION AFTER PUZZLE 1 HAS BEEN COMPLETED
 
 
 
-    }
+   
 })
 
 
