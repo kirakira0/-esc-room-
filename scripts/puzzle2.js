@@ -29,6 +29,14 @@ codeSubmitButton.addEventListener('click', e=> {
     }
 })
 
+doorLeft.addEventListener('click', e=>{
+    console.log("clicked door left"); 
+})
+
+doorRight.addEventListener('click', e=>{
+    console.log("clicked door right"); 
+})
+
 if (puzzle2Solved) {
     if (doorsClosed) {
 
