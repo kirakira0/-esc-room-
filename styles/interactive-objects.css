@@ -258,3 +258,13 @@ position: relative;
     left: -85px;
     bottom: 90px;
 }
+
+.Stairs {
+  border-bottom: 150px solid #555;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 250px;
+  width: 450px;
+  top: 50px;
+  position: relative;
+}
