@@ -37,7 +37,8 @@ function checkKey(e) {
 
             currentView--;
             if (currentView == 0) {
-                currentView = 8;
+                // currentView = 8;
+                currentView = 5; 
             }
 
             console.log(currentView);
@@ -47,7 +48,8 @@ function checkKey(e) {
         else if (e.keyCode == '39') { //RIGHT ARROW KEY OR 'D'
 
             currentView++;
-            if (currentView == 9) {
+            if (currentView == 6) {
+            // if (currentView == 9) {
                 currentView = 1;
             }
 

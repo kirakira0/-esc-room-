@@ -93,6 +93,7 @@ passwordSubmitButton.addEventListener('click', e=> {
     x = document.getElementById("password-submit"); 
     if ((x.value) === password) {
         document.getElementById("message").textContent = "PASSWORD CORRECT"; 
+        computer.numConvos = 2; 
     }
     else {
         document.getElementById("message").textContent = "PASSWORD INCORRECT"; 
@@ -112,6 +113,9 @@ computerElement.addEventListener('click', e=> {
         //showText( computer1 );
         document.getElementById("message").textContent = "[enter] password"; //define the dialogue
         console.log("clicked computer     " + computer.numConvos); 
+    }
+    else if (computer.numConvos === 2) { //CONVERSATION AFTER PUZZLE 1 HAS BEEN COMPLETED
+
     }
 })
 
