@@ -232,5 +232,6 @@ function displayBookInfo(bookIndex) {
     document.getElementById("submit-button").style.display = "block";
 
     document.getElementById("dialogue-text").textContent = "Title: " + books.titles[bookIndex] + "; Author: " + books.authors[bookIndex] + "; ID: " + books.id[bookIndex]; 
+    conversation = end; 
 
 }
