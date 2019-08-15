@@ -42,13 +42,12 @@ class MainPageHandler(webapp2.RequestHandler):
                 'url':users.create_logout_url('/'),
                 "username": google_user.nickname(),
                 "loginMess": "log out"
-            }));
+            }))
         else:
             self.response.write(form_template.render({
                 'url':users.create_login_url('/'),
                 "loginMess": "log in"
-
-            }));
+            }))
 
 class GamePage1Handler(webapp2.RequestHandler):
     def get(self):
@@ -93,7 +92,8 @@ class WinPage2Handler(webapp2.RequestHandler):
             if not user:
                 user = User(user_name=google_user.nickname(),
                             email=google_user.email()).put()
-            user.score = time_taken
+            if user.score and user.score > time_taken:
+                user.score = time_taken
             user.put()
         template = the_jinja_env.get_template('templates/win-ver2.html')
         self.response.write(template.render({'score': time_taken}))
