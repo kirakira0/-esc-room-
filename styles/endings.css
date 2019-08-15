@@ -41,7 +41,5 @@ a:hover {
     grid-row: 1;
     grid-column: 3;
     font-size: 20px;
-    /* top: 8px;
-    right: 16px; */
-
+    margin-left: 200px;
 }
