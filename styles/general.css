@@ -113,7 +113,17 @@ a:hover {
 
 #code-pwd {
     font-size: 20px;
+}
 
+#safe-hint {
+    font-size: 20px;
+    margin-bottom: -80px;
+    padding-top: 40px;
+    opacity: .05;  
+}
+
+#safe-hint:hover {
+    opacity: 0.8; 
 }
 
 #safeknob {
