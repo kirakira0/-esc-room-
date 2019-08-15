@@ -111,6 +111,11 @@ a:hover {
   color:#BEC5CA;
 }
 
+#code-pwd {
+    font-size: 20px;
+
+}
+
 #safeknob {
  height: 25px;
  width: 25px;

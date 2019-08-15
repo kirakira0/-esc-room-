@@ -16,15 +16,16 @@ index = 0;
 
 conversation = ending2; 
 colonPos = conversation[index].indexOf("::"); 
-document.getElementById("win-name-text2").textContent = conversation[index].substring(colonPos + 2);
-document.getElementById("win-dialogue-text2").textContent = conversation[index].substring(0, colonPos);
+document.getElementById("win-dialogue-text2").textContent = conversation[index].substring(colonPos + 2);
+document.getElementById("win-name-text2").textContent = conversation[index].substring(0, colonPos);
 
 const winSubmitButton2 = document.querySelector('#win-submit-button2'); 
 
 winSubmitButton2.addEventListener('click', e=> {
+    index++;
     colonPos = conversation[index].indexOf("::"); 
     document.getElementById("win-dialogue-text2").textContent = conversation[index].substring(colonPos + 2);
     document.getElementById("win-name-text2").textContent = conversation[index].substring(0, colonPos);
-    index++; 
+     
 
 })
