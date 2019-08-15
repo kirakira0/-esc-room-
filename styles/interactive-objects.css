@@ -110,6 +110,7 @@
     width: 600px;
     position: relative;
     margin-left: 75px;
+    z-index: 0; 
 }
 
 #panel:hover {
@@ -120,17 +121,6 @@
     padding: 155px;
     text-shadow: 2px 2px black;
 }
-
-/* .screw {
-    display: flex;
-    justify-content: space-between;
-
-    background: lightgray;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-
-} */
 
 #screw1 {
     background: lightgray;
