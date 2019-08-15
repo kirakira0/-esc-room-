@@ -46,52 +46,54 @@
     /* justify-content: flex-start;  */
     flex-direction: row;
 }
-#door-left {
 
+.doors {
+    top:75px;
+    /* position:relative; */
+    position:relative;
+
+}
+
+#door-left {
     background: #8EA6CB;
     height: 200px;
-    width: 100px;
+    width: 40px;
     display: inline-block;
     z-index: 0;
-    transform: rotateY(-120deg);
-    margin-left: -50px;
+    margin-right: 69px;
 
 }
 #door-right {
     background: #8EA6CB;
     height: 200px;
-    width: 100px;
+    width: 40px;
     display: inline-block;
     z-index: 0;
-    transform: rotateY(120deg);
-    margin-right: -50px;
-}
-
-.doors {
-  top:100px;
-  position:relative;
+    margin-left: 50px;
 }
 
 #right-knob{
-  background: lightgray;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  margin-right: 15px;
+    background: lightgray;
+    width: 4px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin-right: -25px;
+    margin-top: 90px;
 }
 
 #left-knob{
-  background: lightgray;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  margin-left: 15px;
+    background: lightgray;
+    width: 4px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin-left: -25px;
+    margin-top: 90px;
 }
 
 #panel {
