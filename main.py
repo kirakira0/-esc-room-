@@ -86,16 +86,17 @@ class WinPage2Handler(webapp2.RequestHandler):
     def get(self):
         print("GET")
         seconds = self.request.get('seconds')
+        time_taken = 600 - int(seconds)
         google_user = users.get_current_user()
         if google_user:
             user = User.query().filter(User.email == google_user.email()).get()
             if not user:
                 user = User(user_name=google_user.nickname(),
                             email=google_user.email()).put()
-            user.score = 600 - int(seconds)
+            user.score = time_taken
             user.put()
         template = the_jinja_env.get_template('templates/win-ver2.html')
-        self.response.write(template.render())
+        self.response.write(template.render({'score': time_taken}))
 
 # the app configuration section
 app = webapp2.WSGIApplication([
