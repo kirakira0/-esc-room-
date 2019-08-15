@@ -115,9 +115,21 @@ var stairsDialogue1 = [
     "end::"
 ]
 
+var loss = [
+    "::Unfortunately, you neither Uploaded nor escaped the laboratory before time ran out.",
+    "::Press 'Return Home' if you wish to begin another attempt."
+]
+
 
 var ending1 = [
-    
+    "::UPLOADING ... 10%",
+    "::You hear a distant voice ...",
+    "::UPLOADING ... 58%",
+    "?::Congratulations, newcomer.",
+    "::UPLOADING ... 99%",
+    "?::Welcome to paradise.",
+    ":: UPLOADING ... 100%",
+    "::ENDING 1: SUCCESSFUL UPLOAD"
 ]
 
 var ending2 = [
