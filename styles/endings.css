@@ -6,3 +6,9 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+#winPage2 {
+  display: grid;
+  grid-column: 3fr;
+  grid-row: 4fr;
+}
