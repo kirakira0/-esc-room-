@@ -363,31 +363,32 @@ position: relative;
 #triangle_1 {
   content: '';
   position: absolute;
-  left: 550px;
-  top: 410px;
+  left: 275px;
+  top: 0px;
   width: 50px;
   height: 0;
   border: 50px solid transparent;
   border-top-color: #555;
+  position: relative;
 }
 
 #triangle_2 {
   width: 150px;
 	height: 0px;
-  margin-top: -245px;
-  margin-left: 200px;
+  margin-top: -346px;
+  margin-left: 189px;
 	border-top: 45px solid transparent;
-	border-right: 75px solid #555;
-	border-bottom: 30px solid transparent
+	border-right: 86px solid #555;
+	border-bottom: 32px solid transparent
 }
 
 #safe_top {
-  width: 151px;
-  height: 49px;
-  margin-left: 240px;
-  margin-top: -80px;
-  transform: skew(-58deg);
-  background: #550;
+  width: 143px;
+  height: 48.5px;
+  margin-left: 241px;
+  margin-top: -77px;
+  transform: skew(-59.6deg);
+  background: #555;
 }
 
 
