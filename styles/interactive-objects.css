@@ -344,7 +344,6 @@ position: relative;
   margin-left: 283px;
 }
 
-<<<<<<< HEAD
 #wall_1 {
   height: 250px;
   width: 175px;
@@ -371,11 +370,9 @@ position: relative;
   border: 50px solid transparent;
   border-top-color: #555;
 }
-=======
 #door-right:hover {
     opacity: 0.9; 
 }
 #door-left:hover {
     opacity: 0.9; 
 }
->>>>>>> 82467694eab041231855a34f2fd58ab3b0d181db
