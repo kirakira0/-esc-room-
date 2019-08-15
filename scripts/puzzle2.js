@@ -30,25 +30,42 @@ codeSubmitButton.addEventListener('click', e=> {
 })
 
 doorLeft.addEventListener('click', e=>{
-    if (puzzle2Solved) { 
-        // if (!doorLeftOpened && !doorRightOpened) {
-            
-            console.log('not yet opened');         
-            doorLeftOpened = true; 
-            console.log("clicked door left"); 
-            console.log(doorLeftOpened); 
-        // }
+    if (puzzle2Solved) {     
+        console.log('not yet opened');         
+        doorLeftOpened = true; 
+        console.log("clicked door left"); 
+        console.log(doorLeftOpened); 
+
+        //doors
+        document.getElementById("door-left").style.width = '40px'; 
+        document.getElementById("door-left").style.marginRight = '69px'; 
+        document.getElementById("door-right").style.width = '40px'; 
+        document.getElementById("door-right").style.marginLeft = '50px';
+        //doorknobs
+        document.getElementById("right-knob").style.width = '4px'; 
+        document.getElementById("left-knob").style.width = '4px'; 
+
+        doorsOpened = true; 
     }
 })
 
 doorRight.addEventListener('click', e=>{
     if (puzzle2Solved) { 
-        // if (!doorLeftOpened && !doorRightOpened) {
-            console.log('not yet opened');         
-            doorRightOpened = true; 
-            console.log("clicked door left"); 
-            console.log(doorLeftOpened); 
-        // }
+        console.log('not yet opened');         
+        doorRightOpened = true; 
+        console.log("clicked door left"); 
+        console.log(doorLeftOpened); 
+
+        //doors
+        document.getElementById("door-left").style.width = '40px'; 
+        document.getElementById("door-left").style.marginRight = '69px'; 
+        document.getElementById("door-right").style.width = '40px'; 
+        document.getElementById("door-right").style.marginLeft = '50px';
+        //doorknobs
+        document.getElementById("right-knob").style.width = '4px'; 
+        document.getElementById("left-knob").style.width = '4px'; 
+
+        doorsOpened = true;
     }
 })
 

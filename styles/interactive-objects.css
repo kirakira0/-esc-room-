@@ -57,24 +57,27 @@
 #door-left {
     background: #8EA6CB;
     height: 200px;
-    width: 40px;
+    /* width: 40px; */
+    width: 100px; 
     display: inline-block;
     z-index: 0;
-    margin-right: 69px;
+    /* margin-right: 69px; */
 
 }
 #door-right {
     background: #8EA6CB;
     height: 200px;
-    width: 40px;
+    /* width: 40px; */
+    width: 100px; 
     display: inline-block;
     z-index: 0;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 #right-knob{
     background: lightgray;
-    width: 4px;
+    /* width: 4px; */
+    width:15px; 
     height: 15px;
     border-radius: 50%;
     position: relative;
@@ -86,7 +89,8 @@
 
 #left-knob{
     background: lightgray;
-    width: 4px;
+    /* width: 4px; */
+    width: 15px; 
     height: 15px;
     border-radius: 50%;
     position: relative;
