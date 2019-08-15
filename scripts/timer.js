@@ -4,6 +4,9 @@
     var current_time = Date.parse(new Date());
     var deadline = new Date(current_time + time_in_minutes*60*1000);
 
+    function secondsRemaining() {
+        return Math.floor((deadline - new Date()) / 1000);
+    }
 
     function time_remaining(endtime){
         var t = Date.parse(endtime) - Date.parse(new Date());
@@ -33,10 +36,10 @@
             else { // time = 10:00
                 timer.textContent = t.minutes + ':' + '0' + t.seconds;
             }
-            
+
             if(t.total<=0){ clearInterval(timeinterval); }
         }
-        
+
     update_clock(); // run function once at first to avoid delay
     var timeinterval = setInterval(update_clock,1000);
 

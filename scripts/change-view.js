@@ -23,13 +23,13 @@ function checkKey(e) {
 
         e = e || window.event;
 
-        
+
 
         if (e.keyCode == '13') { //enter
             if (currentView == 2) { //only show the password box when in view 2
                 if (!puzzle1Solved) {
                 document.getElementById("password-box").style.display = "block";
-                console.log(puzzle1Solved); 
+                console.log(puzzle1Solved);
                 }
             }
         }
@@ -37,17 +37,18 @@ function checkKey(e) {
             console.log("down arrow pressed");
 
             if (currentView === 7) {
-                window.location.href = '/win-ver2'; 
+                window.location.href = '/win-ver2?seconds=' +
+                    secondsRemaining();
             }
 
                     //doors
-            // document.getElementById("door-left").style.width = '40px'; 
-            // document.getElementById("door-left").style.marginRight = '69px'; 
-            // document.getElementById("door-right").style.width = '40px'; 
+            // document.getElementById("door-left").style.width = '40px';
+            // document.getElementById("door-left").style.marginRight = '69px';
+            // document.getElementById("door-right").style.width = '40px';
             // document.getElementById("door-right").style.marginLeft = '50px';
             // //doorknobs
-            // document.getElementById("right-knob").style.width = '4px'; 
-            // //document.getElementById("right-knob").style.marginRight = '40px'; 
+            // document.getElementById("right-knob").style.width = '4px';
+            // //document.getElementById("right-knob").style.marginRight = '40px';
             // document.getElementById("left-knob").style.width = '4px';
         }
         else if (e.keyCode == '37') { //LEFT ARROW KEY OR 'A'
@@ -55,7 +56,7 @@ function checkKey(e) {
             currentView--;
             if (currentView == 0) {
                 currentView = 7;
-                // currentView = 5; 
+                // currentView = 5;
             }
 
             console.log(currentView);
@@ -69,12 +70,12 @@ function checkKey(e) {
             if (currentView == 8) {
                 currentView = 1;
             }
-            showView(); 
+            showView();
 
         }
     // }
 
-    console.log(currentView); 
+    console.log(currentView);
 }
 
 
@@ -93,5 +94,5 @@ for (let i = 1; i <= 7; i++) {
 }
 
 if (doorsOpened) {
-    console.log("add new views here"); 
+    console.log("add new views here");
 }

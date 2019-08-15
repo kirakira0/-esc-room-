@@ -13,10 +13,11 @@
     </h1>
       <p id="return-home"><a href="/">Return Home</a></p>
     <table id = "Leader_box">
-      {% for user in lowestscore %}
+      {% for user in all_users %}
       <tr id = "rank" >
-        <td id = "name">{{user[0]}}</td>
-        <td id = "score">{{user[1]}}:{{'{:02}'.format(user[2])}}</td>
+        <td id = "name">{{ user.user_name }}</td>
+        <td id = "time">{{ '{:02}:{:02}'.format(
+          user.score // 60, user.score % 60) }}</td>
       </tr>
       {% endfor %}
     </table>

@@ -68,40 +68,34 @@ class WinVer1Handler(webapp2.RequestHandler):
     def get(self):
         print("GET")
         form_template = the_jinja_env.get_template('templates/win-ver1.html')
-        self.response.write(form_template.render())  # the response
+        self.response.write(form_template.render())
 
 class LeaderboardHandler(webapp2.RequestHandler):
     def get(self):
-        print("GET")
-        lowscore = {
-            "lowestscore": OrderedScores()
-        }
+        all_users = User.query().order(User.score).fetch(limit=8)
         form_template = the_jinja_env.get_template('templates/leaderboard.html')
-        self.response.write(form_template.render(lowscore))  # the response
-    def post(self):
-        google_user = users.get_current_user()
-        if not google_user:
-            return
-        user = User.query().filter(User.email == google_user.email()).get()
-        if not user:
-            user = User(user_name=google_user.nickname(),
-                        email=google_user.email()).put()
-        user.score = json.loads(self.request.body)["score"]
-        user.put()
-        self.response.headers['content-type'] = 'text/plain'
-        self.response.write('score updated')
+        self.response.write(form_template.render({'all_users': all_users}))
 
 class CreditsHandler(webapp2.RequestHandler):
     def get(self):
         print("GET")
         form_template = the_jinja_env.get_template('templates/credits.html')
-        self.response.write(form_template.render())  # the response
+        self.response.write(form_template.render())
 
 class WinPage2Handler(webapp2.RequestHandler):
     def get(self):
         print("GET")
-        form_template = the_jinja_env.get_template('templates/win-ver2.html')
-        self.response.write(form_template.render())  # the response
+        seconds = self.request.get('seconds')
+        google_user = users.get_current_user()
+        if google_user:
+            user = User.query().filter(User.email == google_user.email()).get()
+            if not user:
+                user = User(user_name=google_user.nickname(),
+                            email=google_user.email()).put()
+            user.score = 600 - int(seconds)
+            user.put()
+        template = the_jinja_env.get_template('templates/win-ver2.html')
+        self.response.write(template.render())
 
 # the app configuration section
 app = webapp2.WSGIApplication([
