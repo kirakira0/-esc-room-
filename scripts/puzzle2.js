@@ -33,8 +33,9 @@ doorLeft.addEventListener('click', e=>{
     if (puzzle2Solved) {     
         console.log('not yet opened');         
         doorLeftOpened = true; 
-        console.log("clicked door left"); 
-        console.log(doorLeftOpened); 
+        doorRightOpened = true; 
+        // console.log("clicked door left"); 
+        // console.log(doorLeftOpened); 
 
         //doors
         document.getElementById("door-left").style.width = '40px'; 
@@ -51,10 +52,10 @@ doorLeft.addEventListener('click', e=>{
 
 doorRight.addEventListener('click', e=>{
     if (puzzle2Solved) { 
-        console.log('not yet opened');         
         doorRightOpened = true; 
-        console.log("clicked door left"); 
-        console.log(doorLeftOpened); 
+        doorLeftOpened = true; 
+        // console.log("clicked door left"); 
+        // console.log(doorLeftOpened); 
 
         //doors
         document.getElementById("door-left").style.width = '40px'; 
@@ -67,10 +68,8 @@ doorRight.addEventListener('click', e=>{
         document.getElementById("left-knob").style.width = '4px'; 
 
         doorsOpened = true;
+        console.log(doorsOpened); 
     }
 })
 
 
-// if (doorLeftOpened && doorRightOpened) {
-//     console.log("the doors have opened"); 
-// }

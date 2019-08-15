@@ -7,8 +7,8 @@ const doorLeft = document.querySelector('#door-left');
 const doorRight = document.querySelector('#door-right'); 
 
 
-// var doorLeftOpened = false;
-// var doorRightOpened = false; 
+var doorLeftOpened = false;
+var doorRightOpened = false; 
 var doorsOpened = false; 
 
 

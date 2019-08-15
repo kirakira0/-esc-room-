@@ -1,6 +1,8 @@
 //the dialogue 
 var index = 0;
-run_clock('clockdiv',deadline);
+if (window.location.href !== '/win-ver2'){
+    run_clock('clockdiv',deadline);
+}
 var dialogueRunning = true; 
 
 
@@ -298,4 +300,8 @@ function displayBookInfo(bookIndex) {
     document.getElementById("dialogue-text").textContent = "Title: " + books.titles[bookIndex] + "; Author: " + books.authors[bookIndex] + "; ID: " + books.id[bookIndex]; 
     conversation = end; 
 
+}
+
+if (window.location.href === '/win-ver2'){
+    console.log('true'); 
 }
