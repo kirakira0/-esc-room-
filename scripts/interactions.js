@@ -38,9 +38,11 @@ android.addEventListener('click', e=> {
     //if ... check cases, call different text for each  
     if (computer.numConvos === 0) {
         showText(android1);
+        resetDialogue(); 
     }
     else if (computer.numConvos === 1) {
         showText(android2);
+        resetDialogue(); 
     }
     else if (computer.numConvos === 2) {
         showText(android4); 
