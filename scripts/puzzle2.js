@@ -71,6 +71,6 @@ doorRight.addEventListener('click', e=>{
 })
 
 
-if (doorLeftOpened && doorRightOpened) {
-    console.log("the doors have opened"); 
-}
+// if (doorLeftOpened && doorRightOpened) {
+//     console.log("the doors have opened"); 
+// }

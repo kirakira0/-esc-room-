@@ -97,32 +97,11 @@ class CreditsHandler(webapp2.RequestHandler):
         form_template = the_jinja_env.get_template('templates/credits.html')
         self.response.write(form_template.render())  # the response
 
-# class RecipePageHandler(webapp2.RequestHandler):
-#     def post(self):
-#         print("POST")
-#         logging.debug("some helpful debug info")
-
-#         query = self.request.get('query') #take the value and save it as a python variable
-#         ingredients = self.request.get('ingredients')
-#         base_url = "http://www.recipepuppy.com/api/?"
-
-#         logging.debug("INGREDIENTS: " + ingredients)
-
-#         params = {'q':query, 'i':ingredients} #put the query into a parameter list
-
-#         api_url = base_url + urlencode(params)
-#         logging.debug("API URL: " + api_url)
-
-#         response = urlfetch.fetch(api_url).content #fetch a response
-#         results = json.loads(response)
-#         # pprint(results)
-#         # logging.debug(pprint.pformat(results))
-
-
-#         recipe_template = the_jinja_env.get_template('templates/recipe.html')
-#         self.response.write(recipe_template.render({ #save into a dictionary
-#             'results': results
-#         }))  # the response
+class WinPage2Handler(webapp2.RequestHandler):
+    def get(self):
+        print("GET")
+        form_template = the_jinja_env.get_template('templates/win-ver2.html')
+        self.response.write(form_template.render())  # the response
 
 # the app configuration section
 app = webapp2.WSGIApplication([
@@ -130,6 +109,7 @@ app = webapp2.WSGIApplication([
     ('/game-page1', GamePage1Handler),
     ('/win-ver1', WinVer1Handler),
     ('/leaderboard', LeaderboardHandler),
-    ('/credits', CreditsHandler)
+    ('/credits', CreditsHandler),
+    ('/win-ver2', WinPage2Handler)
 
 ], debug=True)

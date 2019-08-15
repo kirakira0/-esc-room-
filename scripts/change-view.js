@@ -36,7 +36,7 @@ function checkKey(e) {
         else if (e.keyCode == '40') { //DOWN ARROW KEY OR 'S'
             console.log("down arrow pressed");
 
-            
+            window.location.href = '/win-ver2'; 
 
                     //doors
             // document.getElementById("door-left").style.width = '40px'; 
