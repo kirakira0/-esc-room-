@@ -91,6 +91,12 @@ a:hover {
     /* background-color: dimgray;  */
 }
 
+#view6 {
+  height: 450px;
+  width: 750px;
+  display: inline-block;
+  background-color: white;
+}
 
 #view7 {
     height: 450px;
