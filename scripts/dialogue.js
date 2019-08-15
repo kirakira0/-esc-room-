@@ -108,6 +108,13 @@ var panel2 = [
     "end::"
 ]
 
+var stairsDialogue1 = [
+    "::Stairs leading down.",
+    "::The must lead to the outside world. The real world.",
+    "::You wonder if you'll miss this world when you Upload.", 
+    "end::"
+]
+
 
 
 /* BOOK TITLE DIALOGUES */ 

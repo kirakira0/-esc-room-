@@ -408,3 +408,11 @@ position: relative;
 #door-left:hover {
     opacity: 0.9;
 }
+
+.Stairs:hover {
+    opacity: 0.9; 
+}
+.Stairs {
+    z-index: -100;
+    height: 300px;  
+}
