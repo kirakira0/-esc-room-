@@ -111,6 +111,13 @@ a:hover {
   color:#BEC5CA;
 }
 
+#safeknob {
+ height: 25px;
+ width: 25px;
+ background-color: #bbb;
+ border-radius: 50%;
+ display: inline-block;
+}
 
 #view7 {
     height: 450px;

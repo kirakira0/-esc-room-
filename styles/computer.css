@@ -7,7 +7,7 @@
     stroke-dasharray: 1360;
     animation-iteration-count: 1;
     animation: csvg 3s cubic-bezier(0, 0.23, 1, .1);
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
   }
 
   @keyframes csvg {
@@ -49,20 +49,20 @@
 }
 
 h5 {
-    opacity: 0.5; 
-    margin-top: 5px; 
+    opacity: 0.5;
+    margin-top: 5px;
 }
 
 #computer-text:hover {
-    opacity: 0.6; 
+    opacity: 0.6;
 
 }
 
 #computer-text {
-    text-align: center; 
-    margin-right: 0px; 
+    text-align: center;
+    margin-right: 0px;
 }
 
 #password-box {
-    
+
 }
