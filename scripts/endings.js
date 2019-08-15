@@ -36,6 +36,12 @@ if (window.location.href.indexOf('/win-ver2') > -1) {
     document.getElementById("final-text").textContent = conversation[index].substring(colonPos + 2);
     document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos);
 }
+else if (window.location.href.indexOf('/win-ver1') > -1) {
+    conversation = ending1; 
+    colonPos = conversation[index].indexOf("::"); 
+    document.getElementById("final-text").textContent = conversation[index].substring(colonPos + 2);
+    document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos);
+}
 
 const submitButton = document.querySelector("#submit-button");
 
