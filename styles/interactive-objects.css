@@ -59,7 +59,7 @@
     background: #8EA6CB;
     height: 200px;
     /* width: 40px; */
-    width: 100px; 
+    width: 100px;
     display: inline-block;
     z-index: 0;
     /* margin-right: 69px; */
@@ -71,7 +71,7 @@
     background: #8EA6CB;
     height: 200px;
     /* width: 40px; */
-    width: 100px; 
+    width: 100px;
     display: inline-block;
     z-index: 0;
     /* bottom: -112px;  */
@@ -81,7 +81,7 @@
 #right-knob{
     background: lightgray;
     /* width: 4px; */
-    width:15px; 
+    width:15px;
     height: 15px;
     border-radius: 50%;
     position: relative;
@@ -94,7 +94,7 @@
 #left-knob{
     background: lightgray;
     /* width: 4px; */
-    width: 15px; 
+    width: 15px;
     height: 15px;
     border-radius: 50%;
     position: relative;
@@ -352,12 +352,14 @@ position: relative;
   margin-left: 283px;
 }
 
-#wall_1 {
+/* #wall_1 {
   height: 250px;
   width: 175px;
-  background-color: #555;
+  background-color: #6b8fb5;
   margin-left: 200px;
   margin-top: 150px;
+  position: relative;
+  z-index: 1;
 }
 
 #wall_2 {
@@ -378,6 +380,7 @@ position: relative;
   border: 50px solid transparent;
   border-top-color: #555;
   position: relative;
+  z-index: 0;
 }
 
 #triangle_2 {
@@ -397,8 +400,7 @@ position: relative;
   margin-top: -77px;
   transform: skew(-59.6deg);
   background: #555;
-}
-
+} */
 
 #door-right:hover {
     opacity: 0.9;
