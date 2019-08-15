@@ -117,6 +117,8 @@ a:hover {
  background-color: #bbb;
  border-radius: 50%;
  display: inline-block;
+ margin-right: 180px;
+ background-color: #525557;
 }
 
 #view7 {
