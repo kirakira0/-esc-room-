@@ -9,6 +9,39 @@ body {
 
 #winPage2 {
   display: grid;
-  grid-column: 3fr;
-  grid-row: 4fr;
+  grid-template-rows: : 4fr;
+  grid-template-columns: 3fr;
+}
+a {
+    opacity: 0.5;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+#return-home {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 20px;
+  margin-left: 100px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin-left: 150px;
+  color: white;
+  font-family: 'Blinker', 'Times New Roman';
+  text-decoration: none;
+  padding-top: 15px;
+}
+
+#user-name {
+    grid-row: 1;
+    grid-column: 3;
+    font-size: 20px;
+    /* top: 8px;
+    right: 16px; */
+
 }
