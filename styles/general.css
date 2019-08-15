@@ -104,8 +104,13 @@ a:hover {
   background-color: #8C969E;
   border-radius: 8%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 150px;
+  font-style: bold;
+  font-family: inherit;
+  font-size: 50px;
+  color:#BEC5CA;
 }
+
 
 #view7 {
     height: 450px;
