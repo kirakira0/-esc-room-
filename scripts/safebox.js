@@ -1,3 +1,5 @@
+//const
+
 const safeButton = document.querySelector('#safe-button'); 
 document.getElementById('safe-code').style.display = "block"; 
 correctPassword = "lucille industries"; 
