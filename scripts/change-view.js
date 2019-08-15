@@ -36,15 +36,17 @@ function checkKey(e) {
         else if (e.keyCode == '40') { //DOWN ARROW KEY OR 'S'
             console.log("down arrow pressed");
 
+            
+
                     //doors
-            document.getElementById("door-left").style.width = '40px'; 
-            document.getElementById("door-left").style.marginRight = '69px'; 
-            document.getElementById("door-right").style.width = '40px'; 
-            document.getElementById("door-right").style.marginLeft = '50px';
-            //doorknobs
-            document.getElementById("right-knob").style.width = '4px'; 
-            //document.getElementById("right-knob").style.marginRight = '40px'; 
-            document.getElementById("left-knob").style.width = '4px';
+            // document.getElementById("door-left").style.width = '40px'; 
+            // document.getElementById("door-left").style.marginRight = '69px'; 
+            // document.getElementById("door-right").style.width = '40px'; 
+            // document.getElementById("door-right").style.marginLeft = '50px';
+            // //doorknobs
+            // document.getElementById("right-knob").style.width = '4px'; 
+            // //document.getElementById("right-knob").style.marginRight = '40px'; 
+            // document.getElementById("left-knob").style.width = '4px';
         }
         else if (e.keyCode == '37') { //LEFT ARROW KEY OR 'A'
 

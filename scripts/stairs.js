@@ -35,3 +35,4 @@ stair7.addEventListener('click', e=> {
     showText(stairsDialogue1); 
     resetDialogue(); 
 })
+
