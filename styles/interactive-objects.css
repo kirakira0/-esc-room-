@@ -51,7 +51,7 @@
     top:75px;
     /* position:relative; */
     position:relative;
-  
+
 }
 
 #door-left {
@@ -193,7 +193,7 @@
   width: 204px;
   top: -73px;
   position: relative;
-  z-index: -10; 
+  z-index: -10;
 }
 
 #bookshelf {
@@ -355,12 +355,12 @@ position: relative;
 #wall_2 {
   height: 200px;
   width: 75px;
-  background-color: #550;
-  margin-left: 225px;
-  margin-top: 0px;
+  background-color: #555;
+  margin-left: 350px;
+  margin-top: -250px;
 }
 
-#diamond {
+#triangle_1 {
   content: '';
   position: absolute;
   left: 550px;
@@ -370,9 +370,29 @@ position: relative;
   border: 50px solid transparent;
   border-top-color: #555;
 }
+
+#triangle_2 {
+  width: 150px;
+	height: 0px;
+  margin-top: -245px;
+  margin-left: 200px;
+	border-top: 45px solid transparent;
+	border-right: 75px solid #555;
+	border-bottom: 30px solid transparent
+}
+
+#safe_top {
+  width: 100px;
+  height: 50px;
+  margin-top: -100px;
+  transform: skew(-60deg);
+  background: #550;
+}
+
+
 #door-right:hover {
-    opacity: 0.9; 
+    opacity: 0.9;
 }
 #door-left:hover {
-    opacity: 0.9; 
+    opacity: 0.9;
 }
