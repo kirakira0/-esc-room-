@@ -37,21 +37,43 @@ if (window.location.href.indexOf('/win-ver2') > -1) {
     document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos);
 }
 else if (window.location.href.indexOf('/win-ver1') > -1) {
+    console.log('in game page 1'); 
     conversation = ending1; 
     colonPos = conversation[index].indexOf("::"); 
-    document.getElementById("final-text").textContent = conversation[index].substring(colonPos + 2);
-    document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos);
+    document.getElementById("win-dialogue-text").textContent = conversation[index].substring(colonPos + 2);
+    document.getElementById("win-name-text").textContent = conversation[index].substring(0, colonPos);
 }
 
-const submitButton = document.querySelector("#submit-button");
+const winSubmitButton = document.querySelector('#win-submit-button'); 
 
-submitButton.addEventListener('click', e=> {
+winSubmitButton.addEventListener('click', e=> {
+    console.log("worked"); 
     colonPos = conversation[index].indexOf("::"); 
-    document.getElementById("final-text").textContent = conversation[index].substring(colonPos + 2);
-    document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos);
+    document.getElementById("win-dialogue-text").textContent = conversation[index].substring(colonPos + 2);
+    document.getElementById("win-name-text").textContent = conversation[index].substring(0, colonPos);
     index++; 
-
 })
+
+// const winSubmitButton2 = document.querySelector('#win-submit-button2'); 
+
+// winSubmitButton2.addEventListener('click', e=> {
+//     colonPos = conversation[index].indexOf("::"); 
+//     document.getElementById("final-text").textContent = conversation[index].substring(colonPos + 2);
+//     document.getElementById("name-text").textContent = conversation[index].substring(0, colonPos);
+//     index++; 
+
+// })
+
+
+
+
+// const submitButton = document.querySelector("#submit-button");
+// const winSubmitButton = document.querySelector("#win-submit-button");
+// const winSubmitButton2 = document.querySelector("#win2-submit-button"); 
+
+
+
+
 
 
 
