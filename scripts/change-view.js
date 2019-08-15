@@ -5,7 +5,7 @@ document.getElementById("view4").style.display = "none";
 document.getElementById("view5").style.display = "none";
 document.getElementById("view6").style.display = "none";
 document.getElementById("view7").style.display = "none";
-document.getElementById("view8").style.display = "none";
+//document.getElementById("view8").style.display = "none";
 
 const passwordBox = document.querySelector("#password-box");
 
@@ -50,7 +50,7 @@ function checkKey(e) {
 
             currentView--;
             if (currentView == 0) {
-                currentView = 8;
+                currentView = 7;
                 // currentView = 5; 
             }
 
@@ -62,7 +62,7 @@ function checkKey(e) {
 
             currentView++;
             // if (currentView == 6) {
-            if (currentView == 9) {
+            if (currentView == 8) {
                 currentView = 1;
             }
             showView(); 
@@ -75,8 +75,8 @@ function checkKey(e) {
 
 
 function showView() {
-    for (let i = 1; i <= 8; i++) {
-
+    // for (let i = 1; i <= 8; i++) {
+for (let i = 1; i <= 7; i++) {
         const element = document.querySelector(`#view${i}`);
         if (i === currentView) {
             element.style.display = "inline-block";
