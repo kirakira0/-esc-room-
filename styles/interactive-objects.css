@@ -109,6 +109,7 @@
     height: 400px;
     width: 600px;
     position: relative;
+    margin-left: 75px;
 }
 
 #panel:hover {

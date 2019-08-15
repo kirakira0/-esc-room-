@@ -105,6 +105,7 @@ a:hover {
   border-radius: 8%;
   margin: 0 auto;
   margin-top: 150px;
+  margin-left: 50%; 
   font-style: bold;
   font-family: inherit;
   font-size: 50px;
