@@ -7,12 +7,13 @@ const doorLeft = document.querySelector('#door-left');
 const doorRight = document.querySelector('#door-right'); 
 
 
-var doorLeftOpened = false;
-var doorRightOpened = false; 
+// var doorLeftOpened = false;
+// var doorRightOpened = false; 
+var doorsOpened = false; 
 
 
 var puzzle1Solved = false; 
-var puzzle2Solved = true; 
+var puzzle2Solved = false; 
 
 let x = document.getElementById("password-submit").value ; 
 

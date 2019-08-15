@@ -25,7 +25,7 @@ function checkKey(e) {
 
         
 
-        if (e.keyCode == '13') { //UP ARROW KEY OR 'W'
+        if (e.keyCode == '13') { //enter
             if (currentView == 2) { //only show the password box when in view 2
                 if (!puzzle1Solved) {
                 document.getElementById("password-box").style.display = "block";
@@ -35,7 +35,6 @@ function checkKey(e) {
         }
         else if (e.keyCode == '40') { //DOWN ARROW KEY OR 'S'
             console.log("down arrow pressed");
-
         }
         else if (e.keyCode == '37') { //LEFT ARROW KEY OR 'A'
 
