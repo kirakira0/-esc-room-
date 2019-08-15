@@ -9,8 +9,9 @@ body {
 
 #winPage2 {
   display: grid;
-  grid-template-rows: : 4fr;
-  grid-template-columns: 3fr;
+  grid-template-rows: : 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 a {
     opacity: 0.5;
@@ -22,7 +23,7 @@ a:hover {
     opacity: 1;
 }
 
-#return-home {
+#return-home2 {
   grid-row: 1;
   grid-column: 1;
   font-size: 20px;
@@ -37,29 +38,33 @@ a:hover {
   padding-top: 15px;
 }
 
-#user-name {
+#user-name2 {
     grid-row: 1;
     grid-column: 3;
     font-size: 20px;
-    margin-left: 200px;
 }
 
-#image-area {
+#image-area2 {
   grid-row: 2;
   grid-column: 2;
   align-items: center;
-  height: 100vh;
+  font-size: 20px;
+
 }
 
-#final-text {
+#final-text2 {
   grid-column: 2;
   grid-row: 3;
   align-items: center;
-
+  margin-top: 400px;
+  font-size: 20px;
 }
 
-#button-area {
+#button-area2 {
   grid-column: 2;
   grid-row: 4;
   align-items: center;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  font-size: 20px;
 }
