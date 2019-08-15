@@ -1,9 +1,8 @@
 # cssi-2019-project-
 an escape room game 
 
-stuff to do:
-- object interaction
-- all the sprites 
-- login nickname
-- don't start timer until after introduction 
--  
+HEY KIRA 
+
+REMEMBER TO DISABLE DEV TOOLS BEFORE PRESENTING 
+- PLAYER SHOULDN'T BE ABLE TO CHANGE VIEWS WHILE DIALOGUE IS RUNNING 
+- LOCK VIEWS GREATER THAN 5 WHILE PUZZLE 2 IS UNSOLVED 

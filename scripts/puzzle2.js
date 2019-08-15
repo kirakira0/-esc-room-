@@ -63,6 +63,7 @@ doorRight.addEventListener('click', e=>{
         document.getElementById("door-right").style.marginLeft = '50px';
         //doorknobs
         document.getElementById("right-knob").style.width = '4px'; 
+        //document.getElementById("right-knob").style.marginRight = '40px'; 
         document.getElementById("left-knob").style.width = '4px'; 
 
         doorsOpened = true;

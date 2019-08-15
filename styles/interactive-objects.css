@@ -55,6 +55,7 @@
 }
 
 #door-left {
+    position: relative; 
     background: #8EA6CB;
     height: 200px;
     /* width: 40px; */
@@ -62,15 +63,18 @@
     display: inline-block;
     z-index: 0;
     /* margin-right: 69px; */
+    /* bottom: -112px;  */
 
 }
 #door-right {
+    position: relative; 
     background: #8EA6CB;
     height: 200px;
     /* width: 40px; */
     width: 100px; 
     display: inline-block;
     z-index: 0;
+    /* bottom: -112px;  */
     /* margin-left: 50px; */
 }
 
