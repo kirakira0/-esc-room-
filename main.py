@@ -78,6 +78,18 @@ class LeaderboardHandler(webapp2.RequestHandler):
         }
         form_template = the_jinja_env.get_template('templates/leaderboard.html')
         self.response.write(form_template.render(lowscore))  # the response
+    def post(self):
+        google_user = users.get_current_user()
+        if not google_user:
+            return
+        user = User.query().filter(User.email == google_user.email()).get()
+        if not user:
+            user = User(user_name=google_user.nickname(),
+                        email=google_user.email()).put()
+        user.score = json.loads(self.request.body)["score"]
+        user.put()
+        self.response.headers['content-type'] = 'text/plain'
+        self.response.write('score updated')
 
 class CreditsHandler(webapp2.RequestHandler):
     def get(self):
