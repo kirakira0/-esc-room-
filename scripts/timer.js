@@ -32,6 +32,14 @@
             }
 
             if(t.total<=0){ clearInterval(timeinterval); }
+
+            //GO TO FAILURE PAGE IF TIMER IS LESS THAN 0
+            if (t.minutes === 0 && t.seconds === 0) {
+                window.location.href = '/failure1'; 
+                console.log("jump here"); 
+            }
+
+
         }
 
     update_clock(); // run function once at first to avoid delay
@@ -39,3 +47,4 @@
 
     }
     //run_clock('clockdiv',deadline);
+    
