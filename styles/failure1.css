@@ -1,9 +1,21 @@
+body {
+  color: white;
+  background-color: black;
+  text-align: center;
+
+  font-family: 'Blinker', 'Times New Roman';
+
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+}
 .failure {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
-  position: absolute;
+  position: absolute; 
   top: calc(50% - 150px);
   left: calc(50% - 150px);
   width: 300px;
@@ -22,4 +34,11 @@
 
 #Win-name-text{
   padding-top: 125px;
+}
+
+#return-home {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 20px;
+  margin-left: 100px;
 }

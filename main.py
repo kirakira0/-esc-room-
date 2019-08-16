@@ -98,6 +98,12 @@ class WinPage2Handler(webapp2.RequestHandler):
         template = the_jinja_env.get_template('templates/win-ver2.html')
         self.response.write(template.render({'score': time_taken}))
 
+class FailHandler(webapp2.RequestHandler):
+    def get(self):
+        print("GET")
+        form_template = the_jinja_env.get_template('templates/failure1.html')
+        self.response.write(form_template.render())
+
 # the app configuration section
 app = webapp2.WSGIApplication([
     ('/', MainPageHandler), #this maps the root url to the Main Page Handler    localhost:8080/form
@@ -105,6 +111,8 @@ app = webapp2.WSGIApplication([
     ('/win-ver1', WinVer1Handler),
     ('/leaderboard', LeaderboardHandler),
     ('/credits', CreditsHandler),
-    ('/win-ver2', WinPage2Handler)
+    ('/win-ver2', WinPage2Handler),
+    ('/failure1', FailHandler)
+
 
 ], debug=True)
