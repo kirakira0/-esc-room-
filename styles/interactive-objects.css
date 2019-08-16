@@ -390,7 +390,7 @@ position: relative;
   align-items: center;
   margin-top: 25px;
   position: absolute;
-  top: calc(50% - 150px);
+  top: 120px;
   left: calc(50% - 150px);
   width: 300px;
   height: 300px;
@@ -407,10 +407,12 @@ position: relative;
 }
 
 #Win-name-text{
-  padding-top: 125px;
+  /* padding-top: 125px; */
+  margin-bottom: 0px; 
+  padding: 0px; 
 }
 
 #win-dialogue-text {
   font-size: 20px;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
