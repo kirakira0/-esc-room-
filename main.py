@@ -66,6 +66,17 @@ class GamePage1Handler(webapp2.RequestHandler):
 class WinVer1Handler(webapp2.RequestHandler):
     def get(self):
         print("GET")
+        seconds = self.request.get('seconds')
+        time_taken = 600 - int(seconds)
+        google_user = users.get_current_user()
+        if google_user:
+            user = User.query().filter(User.email == google_user.email()).get()
+            if not user:
+                user = User(user_name=google_user.nickname(),
+                            email=google_user.email()).put()
+            if user.score and user.score > time_taken:
+                user.score = time_taken
+            user.put()
         form_template = the_jinja_env.get_template('templates/win-ver1.html')
         self.response.write(form_template.render())
 
