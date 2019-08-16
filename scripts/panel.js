@@ -10,16 +10,13 @@ document.getElementById('screw3').style.display = "block";
 document.getElementById('screw4').style.display = "block"; 
 
 function hideScrew(screwNumber) {
-        // console.log(document.getElementById('screw1').style.backgroundColor); 
- 
-    
-    if (obtainedScrewdriver) {
+    // if (obtainedScrewdriver) {
         document.getElementById('screw' + screwNumber).style.backgroundColor = "black"; 
         screw1Color = document.getElementById('screw1').style.backgroundColor; 
         screw2Color = document.getElementById('screw2').style.backgroundColor; 
         screw3Color = document.getElementById('screw3').style.backgroundColor; 
         screw4Color = document.getElementById('screw4').style.backgroundColor;
-    }
+    // }
     if (screw1Color == "black" && screw2Color == "black" && screw3Color == "black" && screw4Color == "black") {
         document.getElementById('panel').style.opacity = 0; 
         console.log('davgf'); 
@@ -38,6 +35,20 @@ screw3.addEventListener('click', e=> {
 screw4.addEventListener('click', e=> {
     hideScrew('4'); 
 })
+
+const names = [
+    'Toal',
+    'Masao',
+    'Talia',
+    'Luis',
+    'Andrew',
+    'Ryan'
+]
+
+newRandomInt = Math.floor(Math.random() * 5); 
+document.getElementById('secret-message').textContent = 'final code: thanks, ' + names[newRandomInt]; 
+finalCode = 'final code: thanks, ' + names[newRandomInt]
+console.log(finalCode); 
 
 
 

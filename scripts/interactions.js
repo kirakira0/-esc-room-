@@ -6,6 +6,8 @@ const keySubmitButton = document.querySelector('#key-button');
 const doorLeft = document.querySelector('#door-left'); 
 const doorRight = document.querySelector('#door-right'); 
 
+var finalCode; 
+
 
 var doorLeftOpened = false;
 var doorRightOpened = false; 

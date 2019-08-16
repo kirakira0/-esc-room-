@@ -1,9 +1,3 @@
-var loss = [
-    "::Unfortunately, you neither Uploaded nor escaped the laboratory before time ran out.",
-    "::Press 'Return Home' if you wish to begin another attempt."
-]
-
-
 var ending1 = [
     "::UPLOADING ... 10%",
     "::You hear a distant voice ...",
