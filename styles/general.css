@@ -47,6 +47,8 @@ a:hover {
     grid-column: 1;
     font-size: 20px;
     margin-left: 100px;
+    font-size: 20px;
+    text-align: left;
 }
 #timer {
     grid-row: 1;
@@ -105,7 +107,7 @@ a:hover {
   border-radius: 8%;
   margin: 0 auto;
   margin-top: 150px;
-  margin-left: 250px; 
+  margin-left: 250px;
   font-style: bold;
   font-family: inherit;
   font-size: 50px;
@@ -120,11 +122,11 @@ a:hover {
     font-size: 20px;
     margin-bottom: -80px;
     padding-top: 40px;
-    opacity: .05;  
+    opacity: .05;
 }
 
 #safe-hint:hover {
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 #safeknob {

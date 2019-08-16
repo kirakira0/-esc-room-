@@ -110,7 +110,7 @@
     width: 600px;
     position: relative;
     margin-left: 75px;
-    z-index: 0; 
+    z-index: 0;
 }
 
 #panel:hover {
@@ -182,7 +182,7 @@
     /* margin-right: 0px;  */
     position: absolute;
     z-index: -20;
-    margin-left: 310px; 
+    margin-left: 330px;
 }
 
 .trapezoid {
@@ -408,4 +408,9 @@ position: relative;
 
 #Win-name-text{
   padding-top: 125px;
+}
+
+#win-dialogue-text {
+  font-size: 20px;
+  margin-top: 20vh;
 }
