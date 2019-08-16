@@ -2,32 +2,47 @@ const screw1 = document.querySelector('#screw1');
 const screw2 = document.querySelector('#screw2'); 
 const screw3 = document.querySelector('#screw3'); 
 const screw4 = document.querySelector('#screw4'); 
+const slidingPanel = document.querySelector('#panel'); 
 
 document.getElementById('screw1').style.display = "block"; 
 document.getElementById('screw2').style.display = "block"; 
 document.getElementById('screw3').style.display = "block"; 
 document.getElementById('screw4').style.display = "block"; 
 
+function hideScrew(screwNumber) {
+        // console.log(document.getElementById('screw1').style.backgroundColor); 
+ 
+    
+    if (obtainedScrewdriver) {
+        document.getElementById('screw' + screwNumber).style.backgroundColor = "black"; 
+        screw1Color = document.getElementById('screw1').style.backgroundColor; 
+        screw2Color = document.getElementById('screw2').style.backgroundColor; 
+        screw3Color = document.getElementById('screw3').style.backgroundColor; 
+        screw4Color = document.getElementById('screw4').style.backgroundColor;
+    }
+    if (screw1Color == "black" && screw2Color == "black" && screw3Color == "black" && screw4Color == "black") {
+        document.getElementById('panel').style.display = "none"; 
+        console.log('davgf'); 
+    }
+}
 
 screw1.addEventListener('click', e=> {
-    if (obtainedScrewdriver) {
-        document.getElementById('screw1').style.backgroundColor = "black"; 
-    }
+    hideScrew('1'); 
 })
 screw2.addEventListener('click', e=> {
-    if (obtainedScrewdriver) {
-        document.getElementById('screw2').style.backgroundColor = "black"; 
-    }
+    hideScrew('2'); 
 })
 screw3.addEventListener('click', e=> {
-    if (obtainedScrewdriver) {
-        document.getElementById('screw3').style.backgroundColor = "black"; 
-    }
+    hideScrew('3');
 })
 screw4.addEventListener('click', e=> {
-    if (obtainedScrewdriver) {
-        document.getElementById('screw4').style.backgroundColor = "black"; 
-    }
+    hideScrew('4'); 
 })
+
+
+
+
+
+
 
 
