@@ -19,7 +19,7 @@ document.onkeydown = checkKey;
 
 function checkKey(e) {
 
-    // if (!dialogueRunning) {
+    if (!dialogueRunning) {
 
         e = e || window.event;
 
@@ -40,16 +40,6 @@ function checkKey(e) {
                 window.location.href = '/win-ver2?seconds=' +
                     secondsRemaining();
             }
-
-                    //doors
-            // document.getElementById("door-left").style.width = '40px';
-            // document.getElementById("door-left").style.marginRight = '69px';
-            // document.getElementById("door-right").style.width = '40px';
-            // document.getElementById("door-right").style.marginLeft = '50px';
-            // //doorknobs
-            // document.getElementById("right-knob").style.width = '4px';
-            // //document.getElementById("right-knob").style.marginRight = '40px';
-            // document.getElementById("left-knob").style.width = '4px';
         }
         else if (e.keyCode == '37') { //LEFT ARROW KEY OR 'A'
 
@@ -73,9 +63,9 @@ function checkKey(e) {
             showView();
 
         }
-    // }
+    }
 
-    console.log(currentView);
+    //console.log(currentView);
 }
 
 
