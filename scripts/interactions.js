@@ -81,7 +81,7 @@ panel.addEventListener('click', e => {
 var passwordIndex = Math.floor(Math.random() * 6); //generate a random number between 1 and 7  
 var password = books.id[passwordIndex]; //set the password 
 //document.getElementById("hint").textContent = books.hint[passwordIndex]; //add the appropriate hint 
-console.log(password);  
+//console.log(password);  
 
 const book1 = document.querySelector('#book1'); 
 const book2 = document.querySelector('#book5'); 
