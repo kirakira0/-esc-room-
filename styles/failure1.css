@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 25px;
-  position: absolute; 
+  position: absolute;
   top: calc(50% - 150px);
   left: calc(50% - 150px);
   width: 300px;
@@ -37,8 +37,29 @@ body {
 }
 
 #return-home {
-  grid-row: 1;
-  grid-column: 1;
   font-size: 20px;
-  margin-left: 100px;
+  text-align: left;
+}
+
+#failure1-circle {
+ position: absolute;
+ top: calc(50% - 150px);
+ left: calc(50% - 150px);
+ width: 300px;
+ height: 300px;
+ border-radius: 50%;
+ box-shadow:
+   inset 0 0 50px rgb(255,0,0),
+   inset 20px 0 80px rgb(255,0,0),
+   inset -20px 0 80px rgb(255,0,0),
+   inset 20px 0 300px rgb(255,0,0),
+   inset -20px 0 300px rgb(255,0,0),
+   0 0 50px #f00,
+   -10px 0 80px #f00,
+   10px 0 80px #f00;
+}
+
+#failure-text {
+  font-size: 20px;
+  margin-top: 80vh;
 }
