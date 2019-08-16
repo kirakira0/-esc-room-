@@ -71,5 +71,3 @@ doorRight.addEventListener('click', e=>{
         console.log(doorsOpened); 
     }
 })
-
-

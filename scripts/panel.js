@@ -19,6 +19,7 @@ function hideScrew(screwNumber) {
     // }
     if (screw1Color == "black" && screw2Color == "black" && screw3Color == "black" && screw4Color == "black") {
         document.getElementById('panel').style.opacity = 0; 
+        puzzle3Solved = true; 
         console.log('davgf'); 
     }
 }

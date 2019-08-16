@@ -17,6 +17,7 @@ var obtainedScrewdriver = false;
 
 var puzzle1Solved = false; 
 var puzzle2Solved = false; 
+var puzzle3Solved = false; 
 
 let x = document.getElementById("password-submit").value ; 
 
@@ -151,6 +152,7 @@ passwordSubmitButton.addEventListener('click', e=> {
         document.getElementById("message").textContent = "PASSWORD INCORRECT"; 
     }
 })
+
 
 
 computerElement.addEventListener('click', e=> {
