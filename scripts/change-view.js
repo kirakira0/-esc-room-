@@ -1,3 +1,9 @@
+var doorLeftOpened = false;
+var doorRightOpened = false; 
+var doorsOpened = false; 
+var obtainedScrewdriver = false; 
+
+
 document.getElementById("view1").style.display = "inline-block";
 document.getElementById("view2").style.display = "none";
 document.getElementById("view3").style.display = "none";
@@ -41,12 +47,16 @@ function checkKey(e) {
                     secondsRemaining();
             }
         }
-        else if (e.keyCode == '37') { //LEFT ARROW KEY OR 'A'
+        else if (e.keyCode == '37') { //LEFT ARROW KEY
 
             currentView--;
-            if (currentView == 0) {
-                currentView = 7;
-                // currentView = 5;
+            if (currentView === 0) {
+                if (doorsOpened) {
+                    currentView = 7;
+                }
+                else {
+                    currentView = 5;
+                }
             }
 
             console.log(currentView);
@@ -56,9 +66,15 @@ function checkKey(e) {
         else if (e.keyCode == '39') { //RIGHT ARROW KEY OR 'D'
 
             currentView++;
-            // if (currentView == 6) {
-            if (currentView == 8) {
-                currentView = 1;
+            if (doorsOpened) {
+                if (currentView === 8) {
+                    currentView = 1;
+                }
+            }
+            else {
+                if (currentView === 6) {
+                    currentView = 1;
+                }
             }
             showView();
 

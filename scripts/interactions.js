@@ -9,12 +9,6 @@ const doorRight = document.querySelector('#door-right');
 var finalCode; 
 
 
-var doorLeftOpened = false;
-var doorRightOpened = false; 
-var doorsOpened = false; 
-var obtainedScrewdriver = false; 
-
-
 var puzzle1Solved = false; 
 var puzzle2Solved = false; 
 var puzzle3Solved = false; 
