@@ -48,7 +48,7 @@ const names = [
 
 newRandomInt = Math.floor(Math.random() * 5); 
 document.getElementById('secret-message').textContent = 'final code: thanks, ' + names[newRandomInt]; 
-finalCode = 'final code: thanks, ' + names[newRandomInt]
+finalCode = 'thanks, ' + names[newRandomInt]
 console.log(finalCode); 
 
 
